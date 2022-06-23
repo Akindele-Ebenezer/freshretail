@@ -63,7 +63,7 @@ section {
 
             div { 
                 padding-inline: 1rem;
-                transform: translateY(-2rem);
+                transform: translateY(-4rem);
                 width: 75rem;
 
                 button {
@@ -127,17 +127,41 @@ section {
                 width: 30rem;
             }
 
+            div[style] {
+                div {
+                    background: rgba(0, 0, 0, .3);
+                    
+                    h2 {
+                        background: rgba(255, 0, 0, 0.4);
+                        color: #ddd;
+                        font-size: 2rem;
+                        width: 100%;
+                    }
+                }
+            }
+
             h1 {
                 font-size: 2.5rem;
             }
 
             p {
                 font-size: 1.4rem;
-
+                
                 &:first-of-type {
-                    padding-block: 2rem;
-                }                
+                    padding-block: 2rem !important;
+                }                 
             }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    main {
+        display: flex;
+        justify-content: center;
+
+        .main {
+            width: 85vw;
         }
     }
 }

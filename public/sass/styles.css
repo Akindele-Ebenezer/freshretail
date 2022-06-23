@@ -135,11 +135,15 @@ header .header nav div ul li {
   width: 16rem;
 }
 .products .products-inner .product div {
-  background-position: center;
+  align-items: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 1rem 0;
+  display: flex;
+  justify-content: center;
   height: 15rem;
-  width: 15rem;
+  width: 100%;
 }
 .products .products-inner .product h1 {
   color: #ff5353;
@@ -194,7 +198,7 @@ section.sec-1 .sec-1-inner {
 }
 section.sec-1 .sec-1-inner div {
   padding-inline: 1rem;
-  transform: translateY(-2rem);
+  transform: translateY(-4rem);
   width: 75rem;
 }
 section.sec-1 .sec-1-inner div button {
@@ -243,11 +247,15 @@ section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) {
   text-align: center;
 }
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) div {
-  background-position: center;
+  align-items: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 1rem 0;
+  display: flex;
+  justify-content: center;
   height: 15rem;
-  width: 15rem;
+  width: 100%;
 }
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) h1 {
   color: #ff5353;
@@ -265,6 +273,15 @@ section.sec-2 .sec-2-inner:first-of-type {
   margin-block: 2rem;
   width: 30rem;
 }
+section.sec-2 .sec-2-inner div[style] div {
+  background: rgba(0, 0, 0, 0.3);
+}
+section.sec-2 .sec-2-inner div[style] div h2 {
+  background: rgba(255, 0, 0, 0.4);
+  color: #ddd;
+  font-size: 2rem;
+  width: 100%;
+}
 section.sec-2 .sec-2-inner h1 {
   font-size: 2.5rem;
 }
@@ -272,9 +289,18 @@ section.sec-2 .sec-2-inner p {
   font-size: 1.4rem;
 }
 section.sec-2 .sec-2-inner p:first-of-type {
-  padding-block: 2rem;
+  padding-block: 2rem !important;
 }
 
+@media (min-width: 1400px) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  main .main {
+    width: 85vw;
+  }
+}
 @media (max-width: 889px) {
   section.sec-1 .sec-1-inner div h1 {
     font-size: 9rem;
