@@ -1,0 +1,127 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+
+    .header {
+        width: 85rem;
+
+        &-top {
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            padding-block: .5rem; 
+            
+    
+            div {
+                &:last-child {
+                    ul {
+                        display: flex;
+    
+                        li {
+                            margin-inline: .5rem;
+
+                            svg {
+                                @include svg(); 
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    padding-right: 2rem;
+                }
+            }
+        }
+
+        nav {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-block: 1rem;
+
+            div {
+                h1 {
+                    img { 
+                        cursor: pointer;
+                        width: 3rem;
+                    }
+                }
+
+                svg {
+                    @include svg();
+                    height: 4rem;
+                    width: 4rem;
+                }
+
+                &:first-child {
+                    align-items: center;
+                    display: flex;
+
+                    h1 {
+                        font-size: 2rem;
+                        margin-left: 1rem;
+                    }
+                }
+
+                &:last-child {
+                    svg {
+                        height: 2rem;
+                        width: 2rem;
+                    }
+                }
+
+                ul {
+                    display: flex;
+
+                    li {
+                        letter-spacing: .13rem;
+                        padding-inline: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 830px) {
+    header {
+        .header {
+            nav {
+                &:first-of-type {
+                    display: none;
+                } 
+            }
+        }
+    }
+}
+
+@media (min-width: 830px) {
+    header {
+        .header {
+            nav {
+                &:last-of-type {
+                    display: none;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 262px) {
+    header {
+        .header {
+            nav {
+                div {
+                    h1 {
+                        &:last-of-type {
+                            display: none;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}

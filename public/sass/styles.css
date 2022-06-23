@@ -1,0 +1,303 @@
+h1,
+.products-title span {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+.products-title span {
+  font-family: "Roboto", sans-serif;
+}
+
+h3,
+.products-title span {
+  font-family: "Roboto", sans-serif;
+}
+
+h4,
+.products-title span {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  color: #0d244c;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+header .header {
+  width: 85rem;
+}
+header .header-top {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+}
+header .header-top div:last-child ul {
+  display: flex;
+}
+header .header-top div:last-child ul li {
+  margin-inline: 0.5rem;
+}
+header .header-top div:last-child ul li svg {
+  cursor: pointer;
+  fill: #0d244c;
+  height: 1.2rem;
+  transition: 0.5s;
+  width: 1rem;
+}
+header .header-top div:last-child ul li svg:hover {
+  fill: #c8d9f6;
+}
+header .header-top div p {
+  padding-right: 2rem;
+}
+header .header nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+header .header nav div h1 img {
+  cursor: pointer;
+  width: 3rem;
+}
+header .header nav div svg {
+  cursor: pointer;
+  fill: #0d244c;
+  height: 1.2rem;
+  transition: 0.5s;
+  width: 1rem;
+  height: 4rem;
+  width: 4rem;
+}
+header .header nav div svg:hover {
+  fill: #c8d9f6;
+}
+header .header nav div:first-child {
+  align-items: center;
+  display: flex;
+}
+header .header nav div:first-child h1 {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+header .header nav div:last-child svg {
+  height: 2rem;
+  width: 2rem;
+}
+header .header nav div ul {
+  display: flex;
+}
+header .header nav div ul li {
+  letter-spacing: 0.13rem;
+  padding-inline: 1rem;
+}
+
+@media (max-width: 830px) {
+  header .header nav:first-of-type {
+    display: none;
+  }
+}
+@media (min-width: 830px) {
+  header .header nav:last-of-type {
+    display: none;
+  }
+}
+@media (max-width: 262px) {
+  header .header nav div h1:last-of-type {
+    display: none;
+  }
+}
+.products {
+  display: flex;
+  justify-content: center;
+}
+.products .products-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90rem;
+}
+.products .products-inner .product {
+  width: 16rem;
+}
+.products .products-inner .product div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+  width: 15rem;
+}
+.products .products-inner .product h1 {
+  color: #ff5353;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.products .products-inner .product p {
+  padding-block: 0.4rem;
+}
+.products .products-inner .product span {
+  color: #aaa;
+  text-transform: uppercase;
+}
+.products-title {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  width: 90rem;
+}
+.products-title hr {
+  border: 1px solid #ddd;
+}
+.products-title span {
+  background: #fff;
+  padding-inline: 1rem;
+  font-size: 2rem;
+  position: absolute;
+  transform: translateY(-1rem);
+}
+.products-title-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-block: 2rem;
+}
+
+section:not(section.sec-1, section.sec-2) {
+  margin-block: 4rem;
+  padding-inline: 1rem;
+}
+section.sec-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+section.sec-1 .sec-1-inner {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+section.sec-1 .sec-1-inner div {
+  padding-inline: 1rem;
+  transform: translateY(-2rem);
+  width: 75rem;
+}
+section.sec-1 .sec-1-inner div button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 1rem 0;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.07rem;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+}
+section.sec-1 .sec-1-inner div button:hover {
+  background: rgba(173, 213, 245, 0.2);
+}
+section.sec-1 .sec-1-inner div h1,
+section.sec-1 .sec-1-inner div h2,
+section.sec-1 .sec-1-inner div span {
+  color: #fff;
+}
+section.sec-1 .sec-1-inner div h1 {
+  font-size: 10rem;
+  margin-block: 2rem;
+}
+section.sec-1 .sec-1-inner div h2 {
+  color: #ddd;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+section.sec-1 .sec-1-inner div span {
+  color: #ddd;
+  display: block;
+  font-size: 1.2rem;
+  text-align: right;
+}
+section.sec-2 {
+  align-items: center;
+  background: #f8f5ef;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-block: 4rem;
+}
+section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) {
+  width: 16rem;
+  text-align: center;
+}
+section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15rem;
+  width: 15rem;
+}
+section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) h1 {
+  color: #ff5353;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) p {
+  padding-block: 0.4rem;
+}
+section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) span {
+  color: #aaa;
+  text-transform: uppercase;
+}
+section.sec-2 .sec-2-inner:first-of-type {
+  margin-block: 2rem;
+  width: 30rem;
+}
+section.sec-2 .sec-2-inner h1 {
+  font-size: 2.5rem;
+}
+section.sec-2 .sec-2-inner p {
+  font-size: 1.4rem;
+}
+section.sec-2 .sec-2-inner p:first-of-type {
+  padding-block: 2rem;
+}
+
+@media (max-width: 889px) {
+  section.sec-1 .sec-1-inner div h1 {
+    font-size: 9rem;
+  }
+}
+@media (max-width: 596px) {
+  section.sec-2 {
+    padding-inline: 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 439px) {
+  section.sec-1 .sec-1-inner div h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 349px) {
+  section.sec-1 .sec-1-inner {
+    padding-inline: unset;
+  }
+  section.sec-1 .sec-1-inner div h1 {
+    font-size: 6rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
