@@ -1,12 +1,13 @@
 @extends('layouts.layout-1')
 
+@section('title', 'FRESH RETAIL |')
 @section('content')
     <section class="sec-1" style="background-image: url('/images/bg.jpg')">
         <div class="sec-1-inner">
             <div>
                 <span>Networking Solutions..</span>
                 <h1>FRESH RETAIL</h1>
-                <h2>HUGE SALE <br> UP TO 70% OFF</h2><br>
+                <h2>Huge Sale <br> UP TO 70% OFF</h2><br>
                 <button>Quick View</button>
             </div>
         </div>
@@ -21,6 +22,7 @@
                     <p>Buy from FRESH RETAIL today!</p>
                 </div>
                 <div class="sec-2-inner">
+                    <h1>SALE</h1>
                     <div style="background-image: url('/images/cables.webp')">
                         <div>
                             <h2>CABLES</h2>
@@ -31,7 +33,7 @@
                 <div class="sec-2-inner">
                     <div style="background-image: url('/images/cables.webp')">
                         <div>
-                            <h2>CABLES</h2>
+                            <h2>IP Phones</h2>
                         </div>
                     </div>
                     <p>IP Phones <em>2</em></p>

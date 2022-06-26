@@ -1,39 +1,14 @@
 header {
+    background: #fff;
     display: flex;
     justify-content: center;
     padding: .5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
     .header {
         width: 85rem;
-
-        &-top {
-            align-items: center;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            justify-content: space-between;
-            padding-block: .5rem; 
-            
-    
-            div {
-                &:last-child {
-                    ul {
-                        display: flex;
-    
-                        li {
-                            margin-inline: .5rem;
-
-                            svg {
-                                @include svg(); 
-                            }
-                        }
-                    }
-                }
-
-                p {
-                    padding-right: 2rem;
-                }
-            }
-        }
 
         nav {
             align-items: center;
@@ -84,6 +59,41 @@ header {
         }
     }
 
+}
+
+.header-top {
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem; 
+    width: 85rem;    
+
+    div {
+
+        &:last-child {
+            ul {
+                display: flex;
+
+                li {
+                    margin-inline: .5rem;
+
+                    svg {
+                        @include svg(); 
+                    }
+                }
+            }
+        }
+
+        p {
+            padding-right: 2rem;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 830px) {

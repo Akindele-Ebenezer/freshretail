@@ -31,38 +31,16 @@ h4,
 }
 
 header {
+  background: #fff;
   display: flex;
   justify-content: center;
   padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header .header {
   width: 85rem;
-}
-header .header-top {
-  align-items: center;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  justify-content: space-between;
-  padding-block: 0.5rem;
-}
-header .header-top div:last-child ul {
-  display: flex;
-}
-header .header-top div:last-child ul li {
-  margin-inline: 0.5rem;
-}
-header .header-top div:last-child ul li svg {
-  cursor: pointer;
-  fill: #0d244c;
-  height: 1.2rem;
-  transition: 0.5s;
-  width: 1rem;
-}
-header .header-top div:last-child ul li svg:hover {
-  fill: #c8d9f6;
-}
-header .header-top div p {
-  padding-right: 2rem;
 }
 header .header nav {
   align-items: center;
@@ -106,6 +84,38 @@ header .header nav div ul li {
   padding-inline: 1rem;
 }
 
+.header-top {
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  width: 85rem;
+}
+.header-top div:last-child ul {
+  display: flex;
+}
+.header-top div:last-child ul li {
+  margin-inline: 0.5rem;
+}
+.header-top div:last-child ul li svg {
+  cursor: pointer;
+  fill: #0d244c;
+  height: 1.2rem;
+  transition: 0.5s;
+  width: 1rem;
+}
+.header-top div:last-child ul li svg:hover {
+  fill: #c8d9f6;
+}
+.header-top div p {
+  padding-right: 2rem;
+}
+.header-top-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 830px) {
   header .header nav:first-of-type {
     display: none;
@@ -124,14 +134,15 @@ header .header nav div ul li {
 .products {
   display: flex;
   justify-content: center;
+  margin-block: 2rem;
 }
 .products .products-inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 90rem;
+  overflow: scroll;
+  width: 95vw;
 }
 .products .products-inner .product {
+  margin: 0.5rem;
   width: 16rem;
 }
 .products .products-inner .product div {
@@ -139,7 +150,7 @@ header .header nav div ul li {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 1rem 0;
+  border-radius: 2rem 0.5rem;
   display: flex;
   justify-content: center;
   height: 15rem;
@@ -225,8 +236,8 @@ section.sec-1 .sec-1-inner div h1 {
 }
 section.sec-1 .sec-1-inner div h2 {
   color: #ddd;
-  font-size: 1.5rem;
-  letter-spacing: 0.15rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.02rem;
 }
 section.sec-1 .sec-1-inner div span {
   color: #ddd;
@@ -236,14 +247,16 @@ section.sec-1 .sec-1-inner div span {
 }
 section.sec-2 {
   align-items: center;
-  background: #f8f5ef;
+  background: linear-gradient(to right, #f8f5ef, #ddd);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-block: 4rem;
 }
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) {
+  margin: 0.5rem;
   width: 16rem;
+  margin-block: 2rem;
   text-align: center;
 }
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) div {
@@ -251,7 +264,7 @@ section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) div {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 1rem 0;
+  border-radius: 2rem 0.5rem;
   display: flex;
   justify-content: center;
   height: 15rem;
@@ -277,8 +290,9 @@ section.sec-2 .sec-2-inner div[style] div {
   background: rgba(0, 0, 0, 0.3);
 }
 section.sec-2 .sec-2-inner div[style] div h2 {
-  background: rgba(255, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   color: #ddd;
+  padding: 0.55rem;
   font-size: 2rem;
   width: 100%;
 }
@@ -323,6 +337,11 @@ section.sec-2 .sec-2-inner p:first-of-type {
   }
   section.sec-1 .sec-1-inner div h1 {
     font-size: 6rem;
+  }
+}
+@media (max-width: 262px) {
+  section.sec-1 .sec-1-inner div h2 {
+    font-size: 2rem;
   }
 }
 
