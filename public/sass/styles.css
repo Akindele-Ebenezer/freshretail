@@ -139,6 +139,7 @@ header .header nav div ul li {
 .products .products-inner {
   display: flex;
   overflow: scroll;
+  padding-bottom: 2rem;
   width: 95vw;
 }
 .products .products-inner .product {
@@ -150,11 +151,10 @@ header .header nav div ul li {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 2rem 0.5rem;
   display: flex;
   justify-content: center;
   height: 15rem;
-  width: 100%;
+  width: 15rem;
 }
 .products .products-inner .product h1 {
   color: #ff5353;
@@ -168,20 +168,25 @@ header .header nav div ul li {
   color: #aaa;
   text-transform: uppercase;
 }
+.products .products-inner .product .sale {
+  background: #ff5353;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0.2rem 1rem;
+  transform: translate(10.03rem, 2.19rem);
+  width: max-content;
+}
 .products-title {
+  border-bottom: 4px solid #f8f5ef;
   font-size: 1.5rem;
   padding-top: 2rem;
-  width: 90rem;
-}
-.products-title hr {
-  border: 1px solid #ddd;
 }
 .products-title span {
   background: #fff;
-  padding-inline: 1rem;
   font-size: 2rem;
-  position: absolute;
-  transform: translateY(-1rem);
+  text-align: center;
 }
 .products-title-wrapper {
   display: flex;
@@ -189,7 +194,7 @@ header .header nav div ul li {
   padding-block: 2rem;
 }
 
-section:not(section.sec-1, section.sec-2) {
+section:not(section.sec-1, section.sec-2, section.sec-3, section.sec-4) {
   margin-block: 4rem;
   padding-inline: 1rem;
 }
@@ -247,7 +252,7 @@ section.sec-1 .sec-1-inner div span {
 }
 section.sec-2 {
   align-items: center;
-  background: linear-gradient(to right, #f8f5ef, #ddd);
+  background: #f8f5ef;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -256,6 +261,7 @@ section.sec-2 {
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) {
   margin: 0.5rem;
   width: 16rem;
+  border-bottom: 1px solid #aaa;
   margin-block: 2rem;
   text-align: center;
 }
@@ -264,11 +270,10 @@ section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) div {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 2rem 0.5rem;
   display: flex;
   justify-content: center;
   height: 15rem;
-  width: 100%;
+  width: 15rem;
 }
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) h1 {
   color: #ff5353;
@@ -281,6 +286,16 @@ section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) p {
 section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) span {
   color: #aaa;
   text-transform: uppercase;
+}
+section.sec-2 .sec-2-inner:not(section.sec-2 .sec-2-inner:first-of-type) .sale {
+  background: #ff5353;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0.2rem 1rem;
+  transform: translate(10.03rem, 2.19rem);
+  width: max-content;
 }
 section.sec-2 .sec-2-inner:first-of-type {
   margin-block: 2rem;
@@ -299,11 +314,67 @@ section.sec-2 .sec-2-inner div[style] div h2 {
 section.sec-2 .sec-2-inner h1 {
   font-size: 2.5rem;
 }
-section.sec-2 .sec-2-inner p {
-  font-size: 1.4rem;
-}
 section.sec-2 .sec-2-inner p:first-of-type {
   padding-block: 2rem !important;
+}
+section.sec-3 {
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-inline: unset !important;
+}
+section.sec-3 div {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+section.sec-3 div button {
+  background: #0d244c;
+  border: 2px solid #0d244c;
+  color: #fff;
+  cursor: pointer;
+  transform: translateX(-0.3rem);
+}
+section.sec-3 div h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+section.sec-3 div input,
+section.sec-3 div button {
+  margin-block: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  width: 30rem;
+}
+section.sec-3 div p {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-block: 2rem;
+}
+section.sec-4 {
+  background: linear-gradient(to left, #f8f5ef, #f4f7fd);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-block: 4rem;
+}
+section.sec-4 div {
+  flex-basis: 30rem;
+  margin-block: 3rem;
+  text-align: center;
+}
+section.sec-4 div center img {
+  width: 5rem;
+}
+section.sec-4 div p {
+  padding-block: 1rem;
+}
+section.sec-4 div span {
+  color: #ba9c61;
 }
 
 @media (min-width: 1400px) {
@@ -326,6 +397,23 @@ section.sec-2 .sec-2-inner p:first-of-type {
     text-align: center;
   }
 }
+@media (max-width: 557px) {
+  .products .products-inner .product {
+    width: 10rem;
+  }
+  .products .products-inner .product .sale {
+    transform: translate(5.45rem, 2.19rem);
+  }
+  .products .products-inner .product div {
+    width: 10rem;
+  }
+}
+@media (max-width: 500px) {
+  section.sec-3 div input,
+section.sec-3 div button {
+    width: 80vw;
+  }
+}
 @media (max-width: 439px) {
   section.sec-1 .sec-1-inner div h1 {
     font-size: 7rem;
@@ -342,6 +430,67 @@ section.sec-2 .sec-2-inner p:first-of-type {
 @media (max-width: 262px) {
   section.sec-1 .sec-1-inner div h2 {
     font-size: 2rem;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer + p {
+  background: #f8f5ef;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-block: 1.5rem;
+  text-align: center;
+  width: 85vw;
+}
+footer .footer {
+  background: #f8f5ef;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 85vw;
+}
+footer .footer .footer-inner {
+  margin-inline: 1rem;
+}
+footer .footer .footer-inner:first-of-type {
+  width: 30rem;
+}
+footer .footer .footer-inner:last-of-type p {
+  padding-bottom: 2rem;
+}
+footer .footer .footer-inner h1 {
+  font-size: 1.5rem;
+  padding-block: 1.5rem;
+}
+footer .footer .footer-inner .icons {
+  padding-block: 1rem;
+}
+footer .footer .footer-inner .icons ul {
+  display: flex;
+}
+footer .footer .footer-inner .icons ul li {
+  margin-inline: 0.5rem;
+}
+footer .footer .footer-inner .icons ul li svg {
+  cursor: pointer;
+  fill: #0d244c;
+  height: 1.2rem;
+  transition: 0.5s;
+  width: 1rem;
+}
+footer .footer .footer-inner .icons ul li svg:hover {
+  fill: #c8d9f6;
+}
+
+@media (max-width: 1400px) {
+  footer {
+    background: #f8f5ef;
+  }
+  footer .footer, footer + p {
+    width: unset;
   }
 }
 

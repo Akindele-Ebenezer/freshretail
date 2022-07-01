@@ -9,6 +9,7 @@
     .products-inner {
         display: flex;
         overflow: scroll; 
+        padding-bottom: 2rem;
         width: 95vw;
     
         .product {
@@ -17,20 +18,14 @@
     }
 
     &-title {
+        border-bottom: 4px solid $color-4;
         font-size: 1.5rem;
-        padding-top: 2rem; 
-        width: 90rem;
-
-        hr {
-            border: 1px solid #ddd;
-        }
+        padding-top: 2rem;  
 
         span {
-            background: #fff;
-            padding-inline: 1rem;
-            font-size: 2rem; 
-            position: absolute;
-            transform: translateY(-1rem);
+            background: #fff; 
+            font-size: 2rem;  
+            text-align: center;
         }
 
         &-wrapper {
@@ -42,7 +37,7 @@
 }
 
 section {
-    &:not(&.sec-1, &.sec-2) {
+    &:not(&.sec-1, &.sec-2, &.sec-3, &.sec-4) {
         margin-block: 4rem;
         padding-inline: 1rem;
     }
@@ -110,7 +105,7 @@ section {
 
     &.sec-2 {
         align-items: center;
-        background: linear-gradient(to right, $color-4, #ddd);
+        background: $color-4;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -119,6 +114,7 @@ section {
         .sec-2-inner {            
             &:not(&:first-of-type) {
                 @include product();
+                border-bottom: 1px solid #aaa;
                 margin-block: 2rem;
                 text-align: center;
             }
@@ -146,12 +142,82 @@ section {
                 font-size: 2.5rem;
             }
 
-            p {
-                font-size: 1.4rem;
-                
+            p { 
                 &:first-of-type {
                     padding-block: 2rem !important;
                 }                 
+            }
+        }
+    }
+
+    &.sec-3 {
+        align-items: center;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        display: flex; 
+        justify-content: center;
+        padding-inline: unset !important;
+        
+        div {
+            background: rgba(0, 0, 0, .3);
+            padding: 10rem 1rem;
+            text-align: center;
+            width: 100%;
+            
+            button {
+                background: $color-1; 
+                border: 2px solid $color-1;
+                color: #fff;
+                cursor: pointer;
+                transform: translateX(-.3rem);
+            }
+            
+            h1 {
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            input,
+            button {
+                margin-block: .5rem;
+                outline: none;
+                padding: 1rem;
+                width: 30rem;
+            }
+            
+            p {
+                color: #fff;
+                font-size: 1.2rem;
+                padding-block: 2rem;
+            }
+        }
+    }
+
+    &.sec-4 {
+        background: linear-gradient(to left, $color-4, lighten($color-1, 80));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-block: 4rem;
+
+        div {
+            flex-basis: 30rem;
+            margin-block: 3rem;
+            text-align: center;
+
+            center {
+                img {
+                    width: 5rem;
+                }
+            }
+
+            p {
+                padding-block: 1rem;
+            }
+
+            span {
+                color: darken($color-4, 40);
             }
         }
     }
@@ -187,6 +253,37 @@ section {
         &.sec-2 { 
             padding-inline: 1rem;
             text-align: center;
+        }
+    }
+}
+
+@media (max-width: 557px) { 
+    .products {  
+        .products-inner { 
+            .product {
+                width: 10rem;
+
+                .sale {
+                    transform: translate(5.45rem, 2.19rem);
+                }
+
+                div {
+                    width: 10rem;
+                }
+            }
+        } 
+    } 
+}
+
+@media (max-width: 500px) {
+    section {
+        &.sec-3 { 
+            div {   
+                input,
+                button { 
+                    width: 80vw;
+                } 
+            }
         }
     }
 }
@@ -234,3 +331,5 @@ section {
         }
     }
 }
+
+@import 'footer';
