@@ -30,13 +30,15 @@ header {
                     width: 4rem;
                 }
 
-                &:first-child {
-                    align-items: center;
-                    display: flex;
-
+                &:first-child { 
                     h1 {
-                        font-size: 2rem;
-                        margin-left: 1rem;
+                        font-size: 2rem; 
+                    }
+
+                    h2 {                       
+                        img {
+                            width: 7rem;
+                        }
                     }
                 }
 
@@ -53,6 +55,12 @@ header {
                     li {
                         letter-spacing: .13rem;
                         padding-inline: 1rem;
+
+                        a {
+                            &:hover {
+                                color: lighten($color: $color-1, $amount: 30);
+                            }
+                        }
                     }
                 }
             }

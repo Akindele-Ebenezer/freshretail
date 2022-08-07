@@ -1,6 +1,6 @@
 @extends('layouts.layout-1')
 
-@section('title', 'Stephmond Solutions | HOME')
+@section('title', 'Stephmond | HOME')
 @section('content')
     <section class="sec-1" style="background-image: url('/images/bg.jpg')">
         <div class="sec-1-inner">

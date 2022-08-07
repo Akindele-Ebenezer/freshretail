@@ -64,13 +64,11 @@ header .header nav div svg {
 header .header nav div svg:hover {
   fill: #c8d9f6;
 }
-header .header nav div:first-child {
-  align-items: center;
-  display: flex;
-}
 header .header nav div:first-child h1 {
   font-size: 2rem;
-  margin-left: 1rem;
+}
+header .header nav div:first-child h2 img {
+  width: 7rem;
 }
 header .header nav div:last-child svg {
   height: 2rem;
@@ -82,6 +80,9 @@ header .header nav div ul {
 header .header nav div ul li {
   letter-spacing: 0.13rem;
   padding-inline: 1rem;
+}
+header .header nav div ul li a:hover {
+  color: #2362cf;
 }
 
 .header-top {
@@ -131,6 +132,10 @@ header .header nav div ul li {
     display: none;
   }
 }
+.active-page {
+  border-bottom: 2px solid tomato;
+}
+
 .products {
   display: flex;
   justify-content: center;
@@ -506,6 +511,21 @@ section.sec-3 div button {
     font-size: 2rem;
   }
 }
+main .main .page-title {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding-block: 6rem;
+  text-align: center;
+}
+main .main .page-title h1 {
+  font-size: 4rem;
+}
+main .main .page-title h1,
+main .main .page-title p {
+  color: #fff;
+}
+
 footer {
   background: #333;
   display: flex;

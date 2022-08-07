@@ -11,6 +11,8 @@
 
     <link rel="stylesheet" href="{{ asset('/sass/styles.css') }}">
 
+    <link rel="shortcut icon" href="{{ asset('/images/logo.png') }}" type="image/x-icon">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,15 +38,15 @@
         <div class="header">
             <nav>
                 <div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M0 155.2C0 147.9 2.153 140.8 6.188 134.7L81.75 21.37C90.65 8.021 105.6 0 121.7 0H518.3C534.4 0 549.3 8.021 558.2 21.37L633.8 134.7C637.8 140.8 640 147.9 640 155.2C640 175.5 623.5 192 603.2 192H36.84C16.5 192 .0003 175.5 .0003 155.2H0zM64 224H128V384H320V224H384V464C384 490.5 362.5 512 336 512H112C85.49 512 64 490.5 64 464V224zM512 224H576V480C576 497.7 561.7 512 544 512C526.3 512 512 497.7 512 480V224z"/></svg><h1>Stephmond</h1>
+                    <h2><a href="{{ route('Home') }}"><img src="/images/logo.png" alt=""></a></h2>
                 </div>
                 <div>
                     <ul>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/">ABOUT</a></li>
-                        <li><a href="/">SHOP</a></li>
-                        <li><a href="/">CONTACT</a></li>
-                        <li><a href="/">SOLUTIONS</a></li>
+                        <li><a href="{{ route('Home') }}" class="{{ Request::is('/') ? 'active-page' : '' }}">HOME</a></li>
+                        <li><a href="{{ route('About') }}" class="{{ Request::is('About') ? 'active-page' : '' }}">ABOUT</a></li>
+                        <li><a href="{{ route('Shop') }}" class="{{ Request::is('Shop') ? 'active-page' : '' }}">SHOP</a></li>
+                        <li><a href="{{ route('Contact') }}" class="{{ Request::is('Contact') ? 'active-page' : '' }}">CONTACT</a></li>
+                        <li><a href="{{ route('Solutions') }}" class="{{ Request::is('Solutions') ? 'active-page' : '' }}">SOLUTIONS</a></li>
                     </ul>
                 </div>
                 <div>
@@ -54,8 +56,8 @@
             <nav>
                 <div> 
                     <h1><img src="{{ asset('images/menu-icon.png') }}"></h1>
-                    <h1>Stephmond</h1>
                 </div> 
+                <h2><a href="{{ route('Home') }}"><img src="/images/logo.png" alt=""></a></h2>
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM272 180H316V224C316 235 324.1 244 336 244C347 244 356 235 356 224V180H400C411 180 420 171 420 160C420 148.1 411 140 400 140H356V96C356 84.95 347 76 336 76C324.1 76 316 84.95 316 96V140H272C260.1 140 252 148.1 252 160C252 171 260.1 180 272 180zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"/></svg>
                 </div>

@@ -1,6 +1,10 @@
 @import 'config';
 @import 'header';
 
+.active-page {
+    border-bottom: 2px solid tomato;
+}
+
 .products { 
     display: flex;
     justify-content: center;
@@ -395,4 +399,5 @@ section {
     }
 }
 
+@import 'about';
 @import 'footer';
