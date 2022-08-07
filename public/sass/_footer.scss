@@ -1,9 +1,12 @@
 footer {
+    background: #333;
     display: flex;
     justify-content: center;
+    padding-block: 2rem;
 
     & + p {
-        background: $color-4;
+        background: #333;
+        color: #eee;
         display: flex;
         justify-content: center;
         margin: auto;
@@ -11,19 +14,18 @@ footer {
         text-align: center;
         width: 85vw;
     }
- 
-    .footer {
-        background: $color-4;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 85vw;
     
+    .footer {
+        background: #333;
+        display: flex;
+        flex-wrap: wrap; 
+        width: 85vw;
+        
         .footer-inner {
             margin-inline: 1rem;
             
             &:first-of-type {
-                width: 30rem;
+                max-width: 30rem;
             }
             
             &:last-of-type {
@@ -31,8 +33,13 @@ footer {
                     padding-bottom: 2rem;
                 }
             }
+
+            button {
+                @include button();
+            }
             
             h1 {
+                color: #eee;
                 font-size: 1.5rem;
                 padding-block: 1.5rem;
             }
@@ -48,6 +55,30 @@ footer {
 
                         svg {
                             @include svg();
+                            fill: #fff;
+                        }
+                    }
+                }
+            }
+
+            input {
+                border: unset;
+                margin-right: .5rem;
+                outline: none;
+                padding: .3rem;
+            }
+
+            p {
+                color: #ccc;
+            }
+
+            ul {
+                li {
+                    a {
+                        color: #ccc;
+
+                        &:hover {
+                            color: lighten($color: $color-1, $amount: 40);
                         }
                     }
                 }
@@ -57,9 +88,7 @@ footer {
 }
 
 @media (max-width: 1400px) {
-    footer {
-        background: $color-4;
-        
+    footer { 
         .footer, & + p {
             width: unset;
         }

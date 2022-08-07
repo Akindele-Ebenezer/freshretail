@@ -1,24 +1,96 @@
 @extends('layouts.layout-1')
 
-@section('title', 'FRESH RETAIL |')
+@section('title', 'Stephmond Solutions | HOME')
 @section('content')
     <section class="sec-1" style="background-image: url('/images/bg.jpg')">
         <div class="sec-1-inner">
             <div>
-                <span>Networking Solutions..</span>
-                <h1>FRESH RETAIL</h1>
-                <h2>Huge Sale <br> UP TO 70% OFF</h2><br>
+                <span>Networking Solutions.. <br> Customer Flow Management</span>
+                <h1>Stephmond</h1>
+                <h2>Network Engineering <br> Cabling Solutions</h2><br>
                 <button>Quick View</button>
             </div>
         </div>
     </section>
     
     <main>
-        <div class="main">
-            
+        <div class="main"> 
+            <section class="sec-1-plus">
+                <div class="sec-1-plus-inner">                    
+                    <h1>WELCOME TO STEPHMOND</h1>
+                    <h2>We Create Beautiful Experiences <br> That Drive Successful Businesses.</h2>
+                    <div class="sec-inner">
+                        <div class="services-wrapper">
+                            <div class="services">
+                                <div>
+                                    <img src="/images/configuration.png">
+                                </div>
+                                <div>
+                                    <h1>Networking Engineering</h1>
+                                    <p>We specilalize in Network Engineering of large and small business and homes.</p>
+                                </div>
+                            </div>
+                            <div class="services">
+                                <div>
+                                    <img src="/images/lan.png">
+                                </div>
+                                <div>
+                                    <h1>Cabling Solutions</h1>
+                                    <p>We run data, power and fibre cables for big and small businesses and homes.</p>
+                                </div>
+                            </div>
+                            <div class="services">
+                                <div>
+                                    <img src="/images/server.png">
+                                </div>
+                                <div>
+                                    <h1>Qmatic Installations & Supports</h1>
+                                    <p>We give your customers the best experience with our Queuing Solution.</p>
+                                </div>
+                            </div>
+                            <div class="services">
+                                <div>
+                                    <img src="/images/internet.png">
+                                </div>
+                                <div>
+                                    <h1>Internet Service Provider</h1>
+                                    <p>This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                                </div>
+                            </div>
+                            <div class="services">
+                                <div>
+                                    <img src="/images/billboard.png">
+                                </div>
+                                <div>
+                                    <h1>Digital Signage Solutions</h1>
+                                    <p>This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                                </div>
+                            </div>
+                            <div class="services">
+                                <div>
+                                    <img src="/images/world-wide-web.png">
+                                </div>
+                                <div>
+                                    <h1>Web|Mobile Application</h1>
+                                    <p>This is where we sit down, grab a cup of coffee and dial in the details.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" style="background-image: url('/images/business.jpg')">
+                <div>
+                    <p>Developing Business Solutions</p>
+                    <br><br><br>
+                    <button>GET IN TOUCH</button>
+                </div>
+            </section>
+
             <div class="products-title-wrapper">
                 <div class="products-title">  
-                    <span>MOST DEMANDED</span>
+                    <span>STEPHMOND Products</span>
                 </div>
             </div>
             
@@ -120,9 +192,9 @@
             
             <section class="sec-2">
                 <div class="sec-2-inner">
-                    <h1>Browse the latest collections.</h1> 
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tenetur eum ex, ea recusandae delectus maiores inventore quisquam mollitia earum. <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate, labore tenetur saepe ullam, numquam culpa unde, officiis obcaecati aperiam suscipit minus delectus fugit hic architecto! Cumque aperiam adipisci hic, sit perferendis, dolores illo magni dolorum eos quod laboriosam corporis?</p>
-                    <p>Buy from FRESH RETAIL today!</p>
+                    <h1>Browse the latest collections</h1> 
+                    <p>STEPHMOND SOLUTIONS SYSTEMS LIMITED, is focused in Customer Flow Management: Qmatic Solutions, Customer Feedback; Digital Signage; Display Walls; Smart Home Security; Website Development; App Development; Software development, Networking Engineering; Cloud Solutions; Server Hosting; Kiosk Solution; IT Supports; IT Sales and Supply and Internet Services. <br><br>We have a highly capable team of software and hardware engineers, web developers, app developers, IT technicians, creative designers, content writers, programmers and web marketing professionals who know how to deliver results.</p>
+                    <p>Buy from STEPHMOND today!</p>
                 </div>
                 <div class="sec-2-inner">
                     <div style="background-image: url('/images/cables.webp')">
@@ -131,6 +203,14 @@
                         </div>
                     </div>
                     <p>Cable collection <em>7</em></p>
+                </div>
+                <div class="sec-2-inner">
+                    <div style="background-image: url('/images/cables.webp')">
+                        <div>
+                            <h2>Switches</h2>
+                        </div>
+                    </div>
+                    <p>Switches <em>9</em></p>
                 </div>
                 <div class="sec-2-inner">
                     <div style="background-image: url('/images/cables.webp')">
@@ -150,13 +230,13 @@
                 </div>
             </section>
 
-            <section class="sec-3" style="background-image: url('/images/bg.jpg')">
+            <section class="sec-3" style="background-image: url('/images/newsletter.jpg')">
                 <div>
                     <form action="">
                         <h1>Subscribe to our newsletter and get 10% Off!</h1>
                         <p>Velit morbi sed non est dolor tellus fringilla diam</p>
                         <br>
-                        <input type="email" name=""> <button>Subscribe</button> 
+                        <input type="email" name="" placeholder="Enter Email..."> <button>Subscribe</button> 
                     </form>
                 </div>
             </section>
@@ -165,7 +245,7 @@
                 <div>
                     <center><img src="/images/buy.png"></center>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, facere?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, facere?</p>
-                    <span>Buy Fresh Retail Products today!</span>
+                    <span>Buy STEPHMOND Products today!</span>
                 </div>
                 <div>
                     <center><img src="/images/collection.png"></center>
