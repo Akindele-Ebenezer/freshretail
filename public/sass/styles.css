@@ -22,7 +22,7 @@ h4,
   color: #0d244c;
   font-family: "Poppins", sans-serif;
   font-size: small;
-  line-height: 1.5;
+  line-height: 1.8;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -145,7 +145,7 @@ header .header nav div ul li a:hover {
   display: flex;
   overflow: scroll;
   padding-bottom: 2rem;
-  width: 95vw;
+  width: 75rem;
 }
 .products .products-inner .product {
   margin: 0.5rem;
@@ -199,7 +199,7 @@ header .header nav div ul li a:hover {
   padding-block: 2rem;
 }
 
-section:not(section.sec-1, section.sec-2, section.sec-3, section.sec-4) {
+section:not(section.sec-1, section.sec-2, section.sec-3) {
   margin-block: 4rem;
   padding-inline: 1rem;
 }
@@ -267,7 +267,9 @@ section.sec-1-plus .sec-1-plus-inner h2 {
   text-align: center;
 }
 section.sec-1-plus .sec-1-plus-inner h1 {
+  color: #2362cf;
   font-family: unset;
+  font-size: 1.2rem;
 }
 section.sec-1-plus .sec-1-plus-inner h2 {
   font-size: 2rem;
@@ -406,7 +408,6 @@ section.sec-3 div p {
   padding-block: 2rem;
 }
 section.sec-4 {
-  background: linear-gradient(to left, #f8f5ef, #f4f7fd);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -425,6 +426,58 @@ section.sec-4 div p {
 }
 section.sec-4 div span {
   color: #ba9c61;
+}
+section.sec-5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+section.sec-5 img {
+  margin: 1rem;
+}
+section.sec-6 {
+  background: linear-gradient(to right, #719ce7, #ffb9b9);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block: 6rem;
+}
+section.sec-6 form {
+  text-align: center;
+  width: 35rem;
+}
+section.sec-6 form button {
+  background: unset;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  background: #0d244c;
+  border: 1px solid #0d244c;
+}
+section.sec-6 form button:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: unset;
+}
+section.sec-6 form .feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+section.sec-6 form .feedback img {
+  cursor: pointer;
+  margin: 1rem;
+  width: 5rem;
+}
+section.sec-6 form h1 {
+  font-size: 2rem;
+}
+section.sec-6 form p {
+  font-size: 1.4rem;
 }
 section.section {
   background-attachment: fixed;
@@ -459,16 +512,29 @@ section.section div p {
 section.section div p {
   font-size: clamp(4vh, 5rem, 14vw);
 }
-
-@media (min-width: 1400px) {
-  main {
-    display: flex;
-    justify-content: center;
-  }
-  main .main {
-    width: 85vw;
-  }
+section.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-block: 7rem;
 }
+section.about div {
+  flex-basis: 40rem;
+}
+section.about div h1 {
+  color: #2362cf;
+  font-size: 1.3rem;
+}
+section.about div h2 {
+  font-family: unset;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+section.about div:last-child p,
+section.about div:last-child strong {
+  font-size: 1.3rem;
+}
+
 @media (max-width: 675px) {
   section.sec-1-plus .sec-1-plus-inner .sec-inner .services-wrapper {
     justify-content: unset;
@@ -525,12 +591,58 @@ main .main .page-title h1,
 main .main .page-title p {
   color: #fff;
 }
+main .main .page-content {
+  padding-inline: 1.5rem;
+}
+main .main .page-content section.sec-1 {
+  display: flex;
+  height: unset;
+  justify-content: center;
+  padding-block: 5rem;
+}
+main .main .page-content section.sec-1 .sec-inner {
+  width: 90rem;
+}
+main .main .page-content section.sec-1 .sec-inner .about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-block: 4rem;
+}
+main .main .page-content section.sec-1 .sec-inner .about-wrapper + p {
+  text-align: center;
+}
+main .main .page-content section.sec-1 .sec-inner .about-wrapper .about {
+  flex-basis: 37rem;
+  margin-block: 2rem;
+}
+main .main .page-content section.sec-1 .sec-inner .about-wrapper .about:first-of-type p:nth-of-type(2)::before {
+  content: "&";
+  color: rgba(245, 248, 249, 0.8);
+  font-family: Playfair Display, serif;
+  font-size: 9.375rem;
+  position: absolute;
+  transform: translate(16rem, -6rem);
+  z-index: -1;
+}
+main .main .page-content section.sec-1 .sec-inner .about-wrapper .about:first-of-type p:not(main .main .page-content section.sec-1 .sec-inner .about-wrapper .about:first-of-type p:first-of-type) {
+  color: #2362cf;
+  font-style: italic;
+  font-weight: bold;
+}
+main .main .page-content section.sec-1 .sec-inner .about-wrapper .about:first-of-type p:last-child {
+  margin-top: 1rem;
+  transform: translateX(6rem);
+}
+main .main .page-content section.sec-1 .sec-inner h1 {
+  font-size: 2rem;
+  text-align: center;
+}
 
 footer {
   background: #333;
   display: flex;
   justify-content: center;
-  padding-block: 2rem;
 }
 footer + p {
   background: #333;
@@ -540,12 +652,11 @@ footer + p {
   margin: auto;
   padding-block: 1.5rem;
   text-align: center;
-  width: 85vw;
 }
 footer .footer {
-  background: #333;
   display: flex;
   flex-wrap: wrap;
+  padding-block: 2rem;
   width: 85vw;
 }
 footer .footer .footer-inner {
@@ -598,7 +709,7 @@ footer .footer .footer-inner .icons ul li svg:hover {
 }
 footer .footer .footer-inner input {
   border: unset;
-  margin-right: 0.5rem;
+  margin: 0.5rem;
   outline: none;
   padding: 0.3rem;
 }
@@ -613,8 +724,21 @@ footer .footer .footer-inner ul li a:hover {
 }
 
 @media (max-width: 1400px) {
+  footer {
+    background: #333;
+  }
   footer .footer, footer + p {
     width: unset;
+  }
+}
+@media (min-width: 1400px) {
+  footer .footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 413px) {
+  footer .footer .footer-inner input {
+    width: 80vw;
   }
 }
 

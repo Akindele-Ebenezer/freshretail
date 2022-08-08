@@ -88,6 +88,60 @@
                 </div>
             </section>
 
+            <section class="about">
+                <div>
+                    <h1>ABOUT</h1>
+                    <h2>STEPHMOND SOLUTIONS</h2>
+                </div>
+                <div>
+                    <p>
+                        <strong>STEPHMOND SOLUTIONS SYSTEMS LIMITED,</strong> is focused in Customer Flow Management: Qmatic Solutions, Customer Feedback; Digital Signage; Display Walls; Smart Home Security; Website Development; App Development; Software development, Networking Engineering; Cloud Solutions; Server Hosting; Kiosk Solution; IT Supports; IT Sales and Supply and Internet Services.
+                        <br><br>
+                        We have a highly capable team of software and hardware engineers, web developers, app developers, IT technicians, creative designers, content writers, programmers and web marketing professionals who know how to deliver results
+                    </p>
+                </div>
+            </section>
+
+            <section class="sec-2">
+                <div class="sec-2-inner">
+                    <h1>Browse the latest collections</h1> 
+                    <p>STEPHMOND SOLUTIONS SYSTEMS LIMITED, is focused in Customer Flow Management: Qmatic Solutions, Customer Feedback; Digital Signage; Display Walls; Smart Home Security; Website Development; App Development; Software development, Networking Engineering; Cloud Solutions; Server Hosting; Kiosk Solution; IT Supports; IT Sales and Supply and Internet Services. <br><br>We have a highly capable team of software and hardware engineers, web developers, app developers, IT technicians, creative designers, content writers, programmers and web marketing professionals who know how to deliver results.</p>
+                    <p>Buy from STEPHMOND today!</p>
+                </div>
+                <div class="sec-2-inner">
+                    <div style="background-image: url('/images/cables.webp')">
+                        <div>
+                            <h2>CABLES</h2>
+                        </div>
+                    </div>
+                    <p>Cable collection <em>7</em></p>
+                </div>
+                <div class="sec-2-inner">
+                    <div style="background-image: url('/images/cables.webp')">
+                        <div>
+                            <h2>Switches</h2>
+                        </div>
+                    </div>
+                    <p>Switches <em>9</em></p>
+                </div>
+                <div class="sec-2-inner">
+                    <div style="background-image: url('/images/cables.webp')">
+                        <div>
+                            <h2>IP Phones</h2>
+                        </div>
+                    </div>
+                    <p>IP Phones <em>2</em></p>
+                </div>
+                <div class="sec-2-inner">
+                    <div style="background-image: url('/images/cables.webp')">
+                        <div>
+                            <h2>Computer</h2>
+                        </div>
+                    </div>
+                    <p>Computer collection  <em>4</em></p>
+                </div>
+            </section>
+
             <div class="products-title-wrapper">
                 <div class="products-title">  
                     <span>STEPHMOND Products</span>
@@ -189,58 +243,19 @@
                     </div>
                 </div>
             </div>
-            
-            <section class="sec-2">
-                <div class="sec-2-inner">
-                    <h1>Browse the latest collections</h1> 
-                    <p>STEPHMOND SOLUTIONS SYSTEMS LIMITED, is focused in Customer Flow Management: Qmatic Solutions, Customer Feedback; Digital Signage; Display Walls; Smart Home Security; Website Development; App Development; Software development, Networking Engineering; Cloud Solutions; Server Hosting; Kiosk Solution; IT Supports; IT Sales and Supply and Internet Services. <br><br>We have a highly capable team of software and hardware engineers, web developers, app developers, IT technicians, creative designers, content writers, programmers and web marketing professionals who know how to deliver results.</p>
-                    <p>Buy from STEPHMOND today!</p>
-                </div>
-                <div class="sec-2-inner">
-                    <div style="background-image: url('/images/cables.webp')">
-                        <div>
-                            <h2>CABLES</h2>
-                        </div>
-                    </div>
-                    <p>Cable collection <em>7</em></p>
-                </div>
-                <div class="sec-2-inner">
-                    <div style="background-image: url('/images/cables.webp')">
-                        <div>
-                            <h2>Switches</h2>
-                        </div>
-                    </div>
-                    <p>Switches <em>9</em></p>
-                </div>
-                <div class="sec-2-inner">
-                    <div style="background-image: url('/images/cables.webp')">
-                        <div>
-                            <h2>IP Phones</h2>
-                        </div>
-                    </div>
-                    <p>IP Phones <em>2</em></p>
-                </div>
-                <div class="sec-2-inner">
-                    <div style="background-image: url('/images/cables.webp')">
-                        <div>
-                            <h2>Computer</h2>
-                        </div>
-                    </div>
-                    <p>Computer collection  <em>4</em></p>
-                </div>
-            </section>
 
             <section class="sec-3" style="background-image: url('/images/newsletter.jpg')">
                 <div>
                     <form action="">
                         <h1>Subscribe to our newsletter and get 10% Off!</h1>
-                        <p>Velit morbi sed non est dolor tellus fringilla diam</p>
+                        <p>Join Over 1000+ People</p>
                         <br>
                         <input type="email" name="" placeholder="Enter Email..."> <button>Subscribe</button> 
                     </form>
                 </div>
             </section>
-
+        </div>
+        
             <section class="sec-4">
                 <div>
                     <center><img src="/images/buy.png"></center>
@@ -258,7 +273,91 @@
                     <span>Contact Us</span>
                 </div>
             </section>
-        </div>
+
+            <section class="sec-5">
+                <img src="/images/01.png" alt="">
+                <img src="/images/02.png" alt="">
+                <img src="/images/03.png" alt="">
+                <img src="/images/04.png" alt="">
+                <img src="/images/05.png" alt="">
+            </section>
+
+            <section class="sec-6">
+                <form action="" method="get">
+                    <h1>We'd love some feedback</h1>
+                    <br><br>
+                    <p>Will you come back?</p>
+                    <div class="feedback">
+                        <div>
+                            <img src="/images/Feedback/smile.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/wink.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div> 
+                        <div>
+                            <img src="/images/Feedback/confused.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/sad.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div> 
+                        <div>
+                            <img src="/images/Feedback/angry.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">                        
+                        </div>
+                    </div>
+                    <p>How would you rate our Services?</p>
+                    <div class="feedback">
+                        <div>
+                            <img src="/images/Feedback/star.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/star.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/star.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/star.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/star.png" alt="">
+                            <br>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                    </div>
+                    <p>Will you recommend us to companies?</p>
+                    <div class="feedback">
+                        <div>
+                            <img src="/images/Feedback/like.png" alt="">
+                            <br>
+                            <input type="radio" name="" id="">
+                        </div>
+                        <div>
+                            <img src="/images/Feedback/dislike.png" alt=""> 
+                            <br>
+                            <input type="radio" name="" id="">
+                        </div>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </section>
     </main>
     @endsection
     

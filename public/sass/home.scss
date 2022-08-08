@@ -14,7 +14,7 @@
         display: flex;
         overflow: scroll; 
         padding-bottom: 2rem;
-        width: 95vw;
+        width: 75rem;
     
         .product {
             @include product();
@@ -41,7 +41,7 @@
 }
 
 section {
-    &:not(&.sec-1, &.sec-2, &.sec-3, &.sec-4) {
+    &:not(&.sec-1, &.sec-2, &.sec-3) {
         margin-block: 4rem;
         padding-inline: 1rem;
     }
@@ -109,8 +109,10 @@ section {
                     text-align: center;
                 }
 
-                h1 {
-                     font-family: unset;
+                h1 {                    
+                    color: lighten($color: $color-1, $amount: 30);
+                    font-family: unset;
+                    font-size: 1.2rem;
                 }
 
                 h2 { 
@@ -250,7 +252,6 @@ section {
     }
 
     &.sec-4 {
-        background: linear-gradient(to left, $color-4, lighten($color-1, 80));
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -273,6 +274,56 @@ section {
 
             span {
                 color: darken($color-4, 40);
+            }
+        }
+    }
+
+    &.sec-5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        img {
+            margin: 1rem;
+        }
+    }
+
+    &.sec-6 {
+        background: linear-gradient(to right, lighten($color-1, 50), lighten($color-3, 20));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-block: 6rem;
+
+        form {
+            text-align: center;
+            width: 35rem;
+            
+            button {
+                @include button();
+                background: $color-1;
+                border: 1px solid $color-1;
+            }
+
+            .feedback {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 4rem;
+                
+                img {
+                    cursor: pointer;
+                    margin: 1rem;
+                    width: 5rem;
+                }
+            }
+
+            h1 {
+                font-size: 2rem;
+            } 
+
+            p {
+                font-size: 1.4rem;
             }
         }
     }
@@ -303,15 +354,42 @@ section {
             }
         }
     }
+
+    &.about { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-block: 7rem;
+
+        div {
+            flex-basis: 40rem;
+
+            h1 {
+                color: lighten($color: $color-1, $amount: 30);
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-family: unset;
+                font-size: 4rem;
+                margin-bottom: 1rem;
+            }
+
+            &:last-child {
+                p,
+                strong {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1400px) {
-    main {
-        display: flex;
-        justify-content: center;
+    main { 
 
         .main {
-            width: 85vw;
+             
         }
     }
 }

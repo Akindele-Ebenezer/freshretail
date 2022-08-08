@@ -102,7 +102,7 @@
             </div>
             <div class="footer-inner">
                 <h1>Subscribe to our newsletter</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, ipsa!</p>
+                <p>Join Over 1000+ People.</p>
                 <input type="email" name="" placeholder="Enter Email..."> <button>Subscribe</button> 
             </div>
         </div>

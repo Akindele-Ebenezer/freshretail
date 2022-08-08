@@ -16,5 +16,70 @@ main {
                 color: #fff;
             }
         }
+
+        .page-content {
+            padding-inline: 1.5rem;
+
+            section {
+                &.sec-1 {
+                    display: flex;
+                    height: unset;
+                    justify-content: center;
+                    padding-block: 5rem;
+                    
+                    .sec-inner {
+                        width: 90rem;
+                        
+                        .about-wrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                            padding-block: 4rem;
+
+                            & + p {
+                                text-align: center;
+                            }
+
+                            .about {
+                                flex-basis: 37rem;
+                                margin-block: 2rem;
+
+                                &:first-of-type {
+                                    p {
+                                        &:nth-of-type(2) {
+                                            &::before {
+                                                content: "\0026";
+                                                color: rgba(245, 248, 249, 0.8);
+                                                font-family: Playfair Display, serif;
+                                                font-size: 9.375rem;
+                                                position: absolute;
+                                                transform: translate(16rem, -6rem);
+                                                z-index: -1;
+                                            }
+                                        }
+
+                                        &:not(&:first-of-type) {
+                                            color: lighten($color: $color-1, $amount: 30);
+                                            font-style: italic;
+                                            font-weight: bold;
+                                        }
+
+                                        &:last-child {
+                                            margin-top: 1rem;
+                                            transform: translateX(6rem);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        h1 {
+                            font-size: 2rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

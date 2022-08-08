@@ -1,8 +1,7 @@
-footer {
+footer { 
     background: #333;
     display: flex;
     justify-content: center;
-    padding-block: 2rem;
 
     & + p {
         background: #333;
@@ -11,14 +10,14 @@ footer {
         justify-content: center;
         margin: auto;
         padding-block: 1.5rem;
-        text-align: center;
-        width: 85vw;
+        text-align: center; 
     }
     
     .footer {
-        background: #333;
+        // background: #333;
         display: flex;
         flex-wrap: wrap; 
+        padding-block: 2rem;
         width: 85vw;
         
         .footer-inner {
@@ -63,7 +62,7 @@ footer {
 
             input {
                 border: unset;
-                margin-right: .5rem;
+                margin: .5rem;
                 outline: none;
                 padding: .3rem;
             }
@@ -89,8 +88,30 @@ footer {
 
 @media (max-width: 1400px) {
     footer { 
+        background: #333;
+        
         .footer, & + p {
             width: unset;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    footer { 
+        .footer {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 413px) {
+    footer { 
+        .footer {
+            .footer-inner {
+                input {
+                    width: 80vw;
+                }
+            }
         }
     }
 }
