@@ -30,6 +30,11 @@ h4,
   word-wrap: break-word;
 }
 
+.Feedback {
+  border-radius: 50%;
+  box-shadow: 1px 2px 19px #888;
+}
+
 header {
   background: #fff;
   display: flex;
@@ -431,6 +436,7 @@ section.sec-5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-block: 5rem;
 }
 section.sec-5 img {
   margin: 1rem;
@@ -472,6 +478,9 @@ section.sec-6 form .feedback img {
   cursor: pointer;
   margin: 1rem;
   width: 5rem;
+}
+section.sec-6 form .feedback input {
+  display: none;
 }
 section.sec-6 form h1 {
   font-size: 2rem;

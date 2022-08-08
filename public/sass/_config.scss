@@ -40,6 +40,11 @@ $headings: 1, 2, 3, 4;
     }
 }
 
+.Feedback {
+    border-radius: 50%;
+    box-shadow: 1px 2px 19px #888;
+}
+
 @mixin product {
     margin: .5rem;
     width: 16rem;

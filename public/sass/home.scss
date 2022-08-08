@@ -282,6 +282,7 @@ section {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        padding-block: 5rem;
 
         img {
             margin: 1rem;
@@ -315,6 +316,10 @@ section {
                     cursor: pointer;
                     margin: 1rem;
                     width: 5rem;
+                }
+
+                input {
+                    display: none;
                 }
             }
 

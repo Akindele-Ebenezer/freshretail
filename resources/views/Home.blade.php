@@ -274,14 +274,6 @@
                 </div>
             </section>
 
-            <section class="sec-5">
-                <img src="/images/01.png" alt="">
-                <img src="/images/02.png" alt="">
-                <img src="/images/03.png" alt="">
-                <img src="/images/04.png" alt="">
-                <img src="/images/05.png" alt="">
-            </section>
-
             <section class="sec-6">
                 <form action="" method="get">
                     <h1>We'd love some feedback</h1>
@@ -291,27 +283,27 @@
                         <div>
                             <img src="/images/Feedback/smile.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="Smile" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/wink.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="Wink" id="">
                         </div> 
                         <div>
                             <img src="/images/Feedback/confused.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="Confused" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/sad.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="Sad" id="">
                         </div> 
                         <div>
                             <img src="/images/Feedback/angry.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">                        
+                            <input type="checkbox" name="Angry" id="">                        
                         </div>
                     </div>
                     <p>How would you rate our Services?</p>
@@ -319,27 +311,27 @@
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="OneStar" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="TwoStars" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="ThreeStars" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="FourStars" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="FiveStars" id="">
                         </div>
                     </div>
                     <p>Will you recommend us to companies?</p>
@@ -347,18 +339,52 @@
                         <div>
                             <img src="/images/Feedback/like.png" alt="">
                             <br>
-                            <input type="radio" name="" id="">
+                            <input type="radio" name="Like" id="">
                         </div>
                         <div>
                             <img src="/images/Feedback/dislike.png" alt=""> 
                             <br>
-                            <input type="radio" name="" id="">
+                            <input type="radio" name="Dislike" id="">
                         </div>
                     </div>
                     <button>Submit</button>
                 </form>
             </section>
+            
+            <section class="sec-5">
+                <img src="/images/01.png" alt="">
+                <img src="/images/02.png" alt="">
+                <img src="/images/03.png" alt="">
+                <img src="/images/04.png" alt="">
+                <img src="/images/05.png" alt="">
+            </section>
+
     </main>
+
+    <script>
+
+        let Feedback = document.querySelectorAll('section.sec-6 form .feedback div');
+
+        for (let i = 0; i < Feedback.length; i++) {
+            Feedback[i].addEventListener('click', () => {
+                Feedback[i].classList.toggle('Feedback'); 
+                
+                if (Feedback[i].lastElementChild.checked === false) {
+                    Feedback[i].lastElementChild.checked = true;                    
+                } else {
+                    Feedback[i].lastElementChild.checked = false;
+                }
+                
+                // if (Feedback[i].lastElementChild.name !== Feedback[i].lastElementChild.name) {
+                    
+                //     console.log(Feedback[i].lastElementChild);
+                    // Feedback[i].lastElementChild.checked = true;
+                // }
+            });
+            
+        }
+
+    </script>
     @endsection
     
     <!-- https://preview.themeforest.net/item/flatsome-multipurpose-responsive-woocommerce-theme/full_screen_preview/5484319?irgwc=1&clickid=1mvX%3AmWhHxyIUeizap0BSzDkUkDzBF2b1RlDxU0&iradid=275988&irpid=369282&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius -->
