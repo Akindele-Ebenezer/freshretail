@@ -1,71 +1,78 @@
 .page-content {
-    background: $color-5;
-
-    .contact-title {    
-        margin-top: 2rem;
-        
-        h1 {
-            color: #fff;
-            font-size: 3rem;
-            text-align: center;
-        }
+    &.Contact {
+        background: $color-5;
     }
+
+    .contact-section {
     
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-block: 4rem;
-        text-align: center;
-        
-        div {
-            flex-basis: 22rem;
-            margin-block: 2rem;
-
-            p, 
-            span {            
+        .contact-title {    
+            padding-top: 3rem;
+            
+            h1 {
                 color: #fff;
-            }
-
-            svg {
-                margin-block: 1rem;
-                width: 3rem;
+                font-size: 3rem;
+                text-align: center;
             }
         }
-    }
-
-    .contact-form {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5rem;
-
-        form {
-            button {
-                @include button(); 
-                color: $color-1;
-            }  
-
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding-block: 4rem;
+            text-align: center;
+            
             div {
-                margin-block: 3rem;
-
-                &:nth-child(2) {
-                    display: flex;
-                    justify-content: space-between;
-
-                    input {
-                        width: 48%;
-                    }
-                }
-
-                input,
-                textarea {
-                    background: $color-5;
-                    border: none;
-                    border-bottom: 1px solid #fff;
+                flex-basis: 22rem;
+                margin-block: 2rem;
+    
+                p, 
+                span {            
                     color: #fff;
-                    outline: none;
-                    width: 99.5%;
-                    resize: none;
+                }
+    
+                svg {
+                    fill: #eee;
+                    margin-block: 1rem;
+                    width: 3rem;
+                }
+            }
+        }
+    
+        .contact-form {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 6rem;
+    
+            form {
+                width: 50rem;
+
+                button {
+                    @include button(); 
+                }  
+    
+                div {
+                    margin-block: 3rem;
+    
+                    &:nth-child(2) {
+                        display: flex;
+                        justify-content: space-between;
+    
+                        input {
+                            width: 48%;
+                        }
+                    }
+    
+                    input,
+                    textarea {
+                        background: $color-5;
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        color: #fff;
+                        outline: none;
+                        width: 99.5%;
+                        resize: none;
+                    }
                 }
             }
         }

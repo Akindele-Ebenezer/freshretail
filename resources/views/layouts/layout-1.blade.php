@@ -93,11 +93,11 @@
             <div class="footer-inner">
                 <h1>Get in touch</h1>
                 <ul>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Whatsapp</a></li>
-                    <li><a href="">Email</a></li>
+                    <li><a href="{{ route('Contact') }}">Contact</a></li>
+                    <li><a href="/">Facebook</a></li>
+                    <li><a href="/">Instagram</a></li>
+                    <li><a href="/">Whatsapp</a></li>
+                    <li><a href="/">Email</a></li>
                 </ul>
             </div>
             <div class="footer-inner">
