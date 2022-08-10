@@ -298,7 +298,7 @@ section {
 
         form {
             text-align: center;
-            width: 35rem;
+            width: 45rem;
             
             button {
                 @include button();
@@ -319,7 +319,7 @@ section {
                 }
 
                 input {
-                    display: none;
+                    // display: none;
                 }
             }
 
@@ -483,4 +483,5 @@ section {
 }
 
 @import 'about';
+@import 'contact';
 @import 'footer';

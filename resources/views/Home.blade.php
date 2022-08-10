@@ -283,27 +283,27 @@
                         <div>
                             <img src="/images/Feedback/smile.png" alt="">
                             <br>
-                            <input type="checkbox" name="Smile" id="">
+                            <input type="radio" name="Smiley" value="Excellent">
                         </div>
                         <div>
                             <img src="/images/Feedback/wink.png" alt="">
                             <br>
-                            <input type="checkbox" name="Wink" id="">
+                            <input type="radio" name="Smiley" value="Good">
                         </div> 
                         <div>
                             <img src="/images/Feedback/confused.png" alt="">
                             <br>
-                            <input type="checkbox" name="Confused" id="">
+                            <input type="radio" name="Smiley" value="Fair">
                         </div>
                         <div>
                             <img src="/images/Feedback/sad.png" alt="">
                             <br>
-                            <input type="checkbox" name="Sad" id="">
+                            <input type="radio" name="Smiley" value="Bad">
                         </div> 
                         <div>
                             <img src="/images/Feedback/angry.png" alt="">
                             <br>
-                            <input type="checkbox" name="Angry" id="">                        
+                            <input type="radio" name="Smiley" value="Worse">                        
                         </div>
                     </div>
                     <p>How would you rate our Services?</p>
@@ -311,27 +311,27 @@
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="OneStar" id="">
+                            <input type="radio" name="Star" value="One Star">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="TwoStars" id="">
+                            <input type="radio" name="Star" value="Two Stars">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="ThreeStars" id="">
+                            <input type="radio" name="Star" value="Three Stars">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="FourStars" id="">
+                            <input type="radio" name="Star" value="Four Stars">
                         </div>
                         <div>
                             <img src="/images/Feedback/star.png" alt="">
                             <br>
-                            <input type="checkbox" name="FiveStars" id="">
+                            <input type="radio" name="Star" value="Five Stars">
                         </div>
                     </div>
                     <p>Will you recommend us to companies?</p>
@@ -339,12 +339,12 @@
                         <div>
                             <img src="/images/Feedback/like.png" alt="">
                             <br>
-                            <input type="radio" name="Like" id="">
+                            <input type="radio" name="Like" value="Like">
                         </div>
                         <div>
                             <img src="/images/Feedback/dislike.png" alt=""> 
                             <br>
-                            <input type="radio" name="Dislike" id="">
+                            <input type="radio" name="Like" value="Dislike">
                         </div>
                     </div>
                     <button>Submit</button>
@@ -369,23 +369,16 @@
             Feedback[i].addEventListener('click', () => {
                 Feedback[i].classList.toggle('Feedback'); 
                 
-                if (Feedback[i].lastElementChild.checked === false) {
+                if (Feedback[i].lastElementChild.checked === false) { 
                     Feedback[i].lastElementChild.checked = true;                    
                 } else {
                     Feedback[i].lastElementChild.checked = false;
-                }
-                
-                // if (Feedback[i].lastElementChild.name !== Feedback[i].lastElementChild.name) {
-                    
-                //     console.log(Feedback[i].lastElementChild);
-                    // Feedback[i].lastElementChild.checked = true;
-                // }
-            });
-            
-        }
-
+                } -
+            });            
+        } 
+         
     </script>
-    @endsection
+@endsection
     
     <!-- https://preview.themeforest.net/item/flatsome-multipurpose-responsive-woocommerce-theme/full_screen_preview/5484319?irgwc=1&clickid=1mvX%3AmWhHxyIUeizap0BSzDkUkDzBF2b1RlDxU0&iradid=275988&irpid=369282&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_369282&utm_medium=affiliate&utm_source=impact_radius -->
     

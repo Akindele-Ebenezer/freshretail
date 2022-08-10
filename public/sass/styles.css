@@ -450,7 +450,7 @@ section.sec-6 {
 }
 section.sec-6 form {
   text-align: center;
-  width: 35rem;
+  width: 45rem;
 }
 section.sec-6 form button {
   background: unset;
@@ -478,9 +478,6 @@ section.sec-6 form .feedback img {
   cursor: pointer;
   margin: 1rem;
   width: 5rem;
-}
-section.sec-6 form .feedback input {
-  display: none;
 }
 section.sec-6 form h1 {
   font-size: 2rem;
@@ -646,6 +643,77 @@ main .main .page-content section.sec-1 .sec-inner .about-wrapper .about:first-of
 main .main .page-content section.sec-1 .sec-inner h1 {
   font-size: 2rem;
   text-align: center;
+}
+
+.page-content {
+  background: #13b1cd;
+}
+.page-content .contact-title {
+  margin-top: 2rem;
+}
+.page-content .contact-title h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+.page-content .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-block: 4rem;
+  text-align: center;
+}
+.page-content .contact-info div {
+  flex-basis: 22rem;
+  margin-block: 2rem;
+}
+.page-content .contact-info div p,
+.page-content .contact-info div span {
+  color: #fff;
+}
+.page-content .contact-info div svg {
+  margin-block: 1rem;
+  width: 3rem;
+}
+.page-content .contact-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.page-content .contact-form form button {
+  background: unset;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  color: #0d244c;
+}
+.page-content .contact-form form button:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: unset;
+}
+.page-content .contact-form form div {
+  margin-block: 3rem;
+}
+.page-content .contact-form form div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+.page-content .contact-form form div:nth-child(2) input {
+  width: 48%;
+}
+.page-content .contact-form form div input,
+.page-content .contact-form form div textarea {
+  background: #13b1cd;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  outline: none;
+  width: 99.5%;
+  resize: none;
 }
 
 footer {
