@@ -7,7 +7,7 @@
             <h1>@yield('page_title')</h1>
             <p>STEPHMOND SOLUTIONS LIMITED</p>
         </div>
-        <div class="page-content {{ Request::is('Contact') ? 'Contact' : '' }}">
+        <div class="page-content  {{ Request::is('Contact') ? 'Contact' : '' }} {{ Request::is('Solutions') ? 'Solutions' : '' }} ">
             @yield('page_content')
         </div>  
     </div>

@@ -71,7 +71,15 @@
         <div class="footer">
             <div class="footer-inner">
                 <h1>More about Stephmond</h1>
-                <p>We are positioning our selves as one of the formost IT ﬁrms that develop and manufature innovative and relevant software and hardware mobile devices and solutions that will point Nigeria and Africa to the rest of the world.</p>
+                <p>We are positioning our selves as one of the formost IT ﬁrms that develop and manufature innovative and relevant software and hardware mobile devices and solutions that will point Nigeria and Africa to the rest of the world. <br><br> Our customer flow management solution
+                is a solution that helps
+                our client manage
+                their customer flow
+                from the first point to
+                the last, from the arrival
+                point to feedback point. 
+                <br><br>
+                Stephmond Solutions : www.stephmond.com </p>
                 <div class="icons">
                     <ul>
                         <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></li>

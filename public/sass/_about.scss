@@ -79,6 +79,33 @@ main {
                         }
                     }
                 }
+
+                &.sec-2 {
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover; 
+                    padding-block: unset;
+            
+                    div {
+                        background: rgba(0, 0, 0, .4);
+                        padding: 8rem 1.5rem; 
+                        width: 100%;
+                    }
+                    
+                    h1 { 
+                        font-size: 2rem;
+                    }
+                    
+                    h1, 
+                    p {
+                        color: #fff;
+                        text-align: center;
+                    }
+                    
+                    p {
+                        font-size: 1.3rem;
+                    } 
+                }
             }
         }
     }

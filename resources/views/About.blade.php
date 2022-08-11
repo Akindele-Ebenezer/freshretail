@@ -18,9 +18,40 @@
                     <p>Stephmond is a IT Solutions Company focusing mainly on Customer Flow Management; Queue Management, Cabling Solutions, Customer Feedback; Digital Signage; Display Walls; Smart Home Security; Website Development; App Development; Software development, Networking Engineering; Cloud Solutions; Server Hosting; Kiosk Solution; IT Supports; IT Sales and Supply; Lightings and Customer Waiting Area, Retail Shops, Studio Design, Fabrication and Build. We go beyond the limits, we commit ourselves to be the best.</p>
                     <br> 
                     <p>You can surely get outstanding service and high quality product from us. Our company believes in pleasant relationship with our client by providing commitment of superior customer service. Our company's professionals want to work as your own IT Solution Provider as we do not only developed solutions, but also developed relationship.</p>
+                    <br>
+                    <p> We treat each of our clients
+                        individually and therefore we do not offer set prices on any
+                        service.
+                        <br><br>
+                        We offer affordable prices for all our solutions and services
+                        for your personal and business needs. Our professionals believe
+                        that the key factor for the success of any ongoing project is to
+                        build a spotless communication bond with our client. <br> That is why we
+                        develop a client area on our website, where our clients can communicate with us
+                        directly concerning any issue they may be going through and our response time is impeccably prompt.
+                    </p>
                 </div>
             </div>
             <p>Stephmond Solutions, will provide relevant solutions to complex problems and we will render it differently and with excellence in this competitive IT market. <br> Working together on the daily requires each individual to let the greater good <br> of the team’s work surface above their own ego.</p>
         </div>
     </section>
+    
+    <section class="sec-2" style="background-image: url('/images/Solutions/mission.jpg')">
+        <div>
+            <h1>
+                CUSTOMER FLOW MANAGEMENT
+            </h1>
+            <p>
+                Our customer
+                management solution
+                is a solution that helps
+                our client management
+                their customer flow
+                from the first point to
+                the last, from the arrival
+                point to feedback point.
+            </p>
+        </div>
+    </section>
+
 @endsection

@@ -644,6 +644,28 @@ main .main .page-content section.sec-1 .sec-inner h1 {
   font-size: 2rem;
   text-align: center;
 }
+main .main .page-content section.sec-2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: unset;
+}
+main .main .page-content section.sec-2 div {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8rem 1.5rem;
+  width: 100%;
+}
+main .main .page-content section.sec-2 h1 {
+  font-size: 2rem;
+}
+main .main .page-content section.sec-2 h1,
+main .main .page-content section.sec-2 p {
+  color: #fff;
+  text-align: center;
+}
+main .main .page-content section.sec-2 p {
+  font-size: 1.3rem;
+}
 
 .page-content.Contact {
   background: #13b1cd;
@@ -670,6 +692,7 @@ main .main .page-content section.sec-1 .sec-inner h1 {
 .page-content .contact-section .contact-info div p,
 .page-content .contact-section .contact-info div span {
   color: #fff;
+  font-size: 1.3rem;
 }
 .page-content .contact-section .contact-info div svg {
   fill: #eee;
@@ -717,6 +740,115 @@ main .main .page-content section.sec-1 .sec-inner h1 {
   outline: none;
   width: 99.5%;
   resize: none;
+}
+
+.page-content .solutions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+}
+.page-content .solutions .solution-wrapper {
+  display: flex;
+  flex-basis: 40rem;
+  margin-block: 1rem;
+  padding: 1rem 1.5rem;
+}
+.page-content .solutions .solution-wrapper div[style] {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3rem;
+  margin-right: 1rem;
+  width: 15rem;
+}
+.page-content .solutions .solution-wrapper h1 {
+  color: #ff5353;
+  font-size: 1.4rem;
+}
+.page-content .solutions .solution-wrapper p {
+  margin-block: 1rem;
+}
+.page-content .solutions .sec-1 {
+  padding-block: unset !important;
+  margin-block: 3rem;
+  width: 100vw;
+}
+.page-content .solutions .sec-1 div {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8rem 1.5rem;
+  width: 100%;
+}
+.page-content .solutions .sec-1 div h1 {
+  font-size: 3.5rem;
+}
+.page-content .solutions .sec-1 div h1,
+.page-content .solutions .sec-1 div p {
+  color: #fff;
+  text-align: center;
+}
+.page-content .solutions .sec-1 div p {
+  font-size: 1.3rem;
+}
+.page-content .solutions .more-solutions,
+.page-content .solutions .our-values {
+  width: 40rem;
+}
+.page-content .solutions .more-solutions h1,
+.page-content .solutions .our-values h1 {
+  color: #2362cf;
+  font-size: 2rem;
+  text-align: center;
+}
+.page-content .solutions .more-solutions ul,
+.page-content .solutions .our-values ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.page-content .solutions .more-solutions ul li,
+.page-content .solutions .our-values ul li {
+  margin: 0.5rem;
+}
+.page-content .solutions .more-solutions ul li img,
+.page-content .solutions .our-values ul li img {
+  margin-right: 1rem;
+  transform: translateY(0.4rem);
+  width: 1.5rem;
+}
+.page-content .our-team {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.page-content .our-team div {
+  flex-basis: 50rem;
+  font-size: 1.2rem;
+}
+.page-content .our-team div[style] {
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+.page-content .our-team div:last-of-type {
+  padding-block: 2rem;
+}
+.page-content .our-team div h2 {
+  color: #2362cf;
+  font-size: 1.75rem !important;
+}
+.page-content .our-team div h2,
+.page-content .our-team div p,
+.page-content .our-team div strong {
+  font-size: unset;
+}
+.page-content .our-team div strong {
+  color: #ff5353;
+}
+
+.Solutions {
+  padding-inline: unset !important;
 }
 
 footer {
