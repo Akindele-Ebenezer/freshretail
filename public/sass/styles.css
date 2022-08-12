@@ -141,6 +141,10 @@ header .header nav div ul li a:hover {
   border-bottom: 2px solid tomato;
 }
 
+.page-content-padding-inline-unset {
+  padding-inline: unset !important;
+}
+
 .products {
   display: flex;
   justify-content: center;
@@ -607,6 +611,7 @@ main .main .page-content section.sec-1 {
   padding-block: 5rem;
 }
 main .main .page-content section.sec-1 .sec-inner {
+  padding-inline: 1rem;
   width: 90rem;
 }
 main .main .page-content section.sec-1 .sec-inner .about-wrapper {
@@ -649,6 +654,7 @@ main .main .page-content section.sec-2 {
   background-repeat: no-repeat;
   background-size: cover;
   padding-block: unset;
+  padding-inline: unset !important;
 }
 main .main .page-content section.sec-2 div {
   background: rgba(0, 0, 0, 0.4);
@@ -665,6 +671,34 @@ main .main .page-content section.sec-2 p {
 }
 main .main .page-content section.sec-2 p {
   font-size: 1.3rem;
+}
+main .main .page-content .digital-signage {
+  display: flex;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+main .main .page-content .digital-signage div h1 {
+  color: #2362cf;
+  font-size: 2rem;
+  text-align: center;
+}
+main .main .page-content .digital-signage div ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 40rem;
+}
+main .main .page-content .digital-signage div ul li {
+  margin: 0.5rem;
+}
+main .main .page-content .digital-signage div ul li img {
+  margin-right: 1rem;
+  transform: translateY(0.4rem);
+  width: 1.5rem;
+}
+
+.About {
+  padding-inline: unset !important;
 }
 
 .page-content.Contact {
@@ -803,7 +837,7 @@ main .main .page-content section.sec-2 p {
 .page-content .solutions .more-solutions ul,
 .page-content .solutions .our-values ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .page-content .solutions .more-solutions ul li,

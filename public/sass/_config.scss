@@ -46,6 +46,33 @@ $headings: 1, 2, 3, 4;
     box-shadow: 1px 2px 19px #888;
 }
 
+@mixin list { 
+    display: flex;
+    width: 40rem;
+            
+    h1 {
+        color: lighten($color: $color-1, $amount: 30);
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        li {
+            margin: .5rem;
+
+            img {
+                margin-right: 1rem;
+                transform: translateY(0.4rem);
+                width: 1.5rem;
+            }
+        }
+    }
+} 
+
 @mixin product {
     margin: .5rem;
     width: 16rem;

@@ -41,17 +41,39 @@
             <h1>
                 CUSTOMER FLOW MANAGEMENT
             </h1>
+            <br> 
             <p>
                 Our customer
                 management solution
                 is a solution that helps
                 our client management
-                their customer flow
+                their customer <br> flow
                 from the first point to
                 the last, from the arrival
-                point to feedback point.
+                point to feedback point. <br>  <br> The feedback point is the seventh point
+                in our customer flow management <br>  journey
+                where the customer leaves her feedback
+                about her experience. <br> <br>   This journey has a
+                statistical report and a live reporting
+                software <br> that give you real time report and
+                Business Intelligent report about your
+                customer journey.
             </p>
         </div>
     </section>
+ 
+    <section class="digital-signage">
+        <div>
+            <h1>Digital Signage</h1>
+            <ul>
+                <li><img src="/images/Solutions/active.png">Web Video Walls</img></li>
+                <li><img src="/images/Solutions/active.png">Digital Signage Player</img></li>
+                <li><img src="/images/Solutions/active.png">Interactive Kiosk</img></li>
+                <li><img src="/images/Solutions/active.png">Digital Signage Software</img></li>
+                <li><img src="/images/Solutions/active.png">Cloud Base Signage</img></li>
+                <li><img src="/images/Solutions/active.png">Enterprise Digital Signageal</img></li> 
+            </ul>
+        </div>
+        </section>
 
 @endsection

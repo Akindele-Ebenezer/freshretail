@@ -28,6 +28,7 @@ main {
                     padding-block: 5rem;
                     
                     .sec-inner {
+                        padding-inline: 1rem;
                         width: 90rem;
                         
                         .about-wrapper {
@@ -85,6 +86,7 @@ main {
                     background-repeat: no-repeat;
                     background-size: cover; 
                     padding-block: unset;
+                    padding-inline: unset !important;
             
                     div {
                         background: rgba(0, 0, 0, .4);
@@ -107,6 +109,41 @@ main {
                     } 
                 }
             }
+
+            .digital-signage {
+                display: flex;
+                justify-content: center;
+                padding-inline: 1rem;
+
+                div {
+                    h1 {
+                        color: #2362cf;
+                        font-size: 2rem;
+                        text-align: center;
+                    }
+    
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        max-width: 40rem;
+    
+                        li {
+                            margin: 0.5rem;
+    
+                            img {
+                                margin-right: 1rem;
+                                transform: translateY(0.4rem);
+                                width: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+.About {
+    padding-inline: unset !important; 
 }

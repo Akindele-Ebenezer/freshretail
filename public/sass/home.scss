@@ -5,6 +5,10 @@
     border-bottom: 2px solid tomato;
 }
 
+.page-content-padding-inline-unset { 
+    padding-inline: unset !important; 
+}
+
 .products { 
     display: flex;
     justify-content: center;

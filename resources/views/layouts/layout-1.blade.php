@@ -101,11 +101,20 @@
             <div class="footer-inner">
                 <h1>Get in touch</h1>
                 <ul>
-                    <li><a href="{{ route('Contact') }}">Contact</a></li>
+                    <li><a href="{{ route('Contact') }}" class="{{ Request::is('Contact') ? 'active-page' : '' }}">Contact</a></li>
                     <li><a href="/">Facebook</a></li>
                     <li><a href="/">Instagram</a></li>
                     <li><a href="/">Whatsapp</a></li>
                     <li><a href="/">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <h1>LINKS</h1>
+                <ul>
+                    <li><a href="{{ route('Home') }}" class="{{ Request::is('/') ? 'active-page' : '' }}">Home</a></li>
+                    <li><a href="{{ route('About') }}" class="{{ Request::is('About') ? 'active-page' : '' }}">About</a></li>
+                    <li><a href="{{ route('Solutions') }}" class="{{ Request::is('Solutions') ? 'active-page' : '' }}">Solutions</a></li>
+                    <li><a href="{{ route('Shop') }}" class="{{ Request::is('Shop') ? 'active-page' : '' }}">Shop</a></li> 
                 </ul>
             </div>
             <div class="footer-inner">

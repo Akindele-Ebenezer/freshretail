@@ -65,18 +65,20 @@
 
         <section class="more-solutions">
             <h1>SERVICES</h1>
-            <ul>
-                <li><img src="/images/Solutions/active.png">Web Applications</img></li>
-                <li><img src="/images/Solutions/active.png">Web Design</img></li>
-                <li><img src="/images/Solutions/active.png">Web Development</img></li>
-                <li><img src="/images/Solutions/active.png">Mobile Application</img></li>
-                <li><img src="/images/Solutions/active.png">Web Hosting</img></li>
-                <li><img src="/images/Solutions/active.png">Web Portal</img></li>
-                <li><img src="/images/Solutions/active.png">E-Commerce</img></li>
-                <li><img src="/images/Solutions/active.png">Internet Marketing</img></li>
-                <li><img src="/images/Solutions/active.png">Content Marketing</img></li>
-                <li><img src="/images/Solutions/active.png">Search Engine Marketing</img></li>
-            </ul>
+            <div>
+                <ul>
+                    <li><img src="/images/Solutions/active.png">Web Applications</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Design</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Development</img></li>
+                    <li><img src="/images/Solutions/active.png">Mobile Application</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Hosting</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Portal</img></li>
+                    <li><img src="/images/Solutions/active.png">E-Commerce</img></li>
+                    <li><img src="/images/Solutions/active.png">Internet Marketing</img></li>
+                    <li><img src="/images/Solutions/active.png">Content Marketing</img></li>
+                    <li><img src="/images/Solutions/active.png">Search Engine Marketing</img></li>
+                </ul>                
+            </div>
         </section>
 
         <section class="our-team">
