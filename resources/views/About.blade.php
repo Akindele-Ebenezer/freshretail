@@ -74,6 +74,6 @@
                 <li><img src="/images/Solutions/active.png">Enterprise Digital Signageal</img></li> 
             </ul>
         </div>
-        </section>
+    </section>
 
 @endsection

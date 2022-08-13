@@ -1,4 +1,9 @@
 .page-content {
+    #map {
+        height: 50rem;
+        width: 50rem;
+    }
+
     &.Contact {
         background: $color-5;
     }

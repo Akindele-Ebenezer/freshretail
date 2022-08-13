@@ -4,7 +4,40 @@
 @section('page_title', $PageTitle)
 
 @section('page_content')
-    <div class="solutions">
+    <div class="solutions"> 
+        <section class="services">
+            <div>
+                <h1>SERVICES</h1>
+                <ul>
+                    <li><img src="/images/Solutions/active.png">Web Applications</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Design</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Development</img></li>
+                    <li><img src="/images/Solutions/active.png">Mobile Application</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Hosting</img></li>
+                    <li><img src="/images/Solutions/active.png">Web Portal</img></li>
+                    <li><img src="/images/Solutions/active.png">E-Commerce</img></li>
+                    <li><img src="/images/Solutions/active.png">Internet Marketing</img></li>
+                    <li><img src="/images/Solutions/active.png">Content Marketing</img></li>
+                    <li><img src="/images/Solutions/active.png">Search Engine Marketing</img></li>
+                </ul>                
+            </div>
+        </section>
+
+        <section class="customer-experience-solutions">
+            <div>
+                <h1>Customer Experience Solutions</h1>
+                <ul>
+                    <li><img src="/images/Solutions/active.png">Queue Management Solutions</img></li>
+                    <li><img src="/images/Solutions/active.png">Customer Feedback Solutions</img></li>
+                    <li><img src="/images/Solutions/active.png">Digital Signage Solutions</img></li>
+                    <li><img src="/images/Solutions/active.png">Display Video Wall Screen</img></li>
+                    <li><img src="/images/Solutions/active.png">BIS Reporting Solutions</img></li>
+                    <li><img src="/images/Solutions/active.png">Mobile Queuing Systems</img></li>
+                    <li><img src="/images/Solutions/active.png">E-Commerce</img></li>
+                </ul>                
+            </div>
+        </section>
+
         <div class="solution-wrapper">
             <div style="background-image: url('/images/Solutions/internet-service-provider.png')"></div>
             <div class="solution">
@@ -63,24 +96,6 @@
             </div>
         </section>
 
-        <section class="more-solutions">
-            <h1>SERVICES</h1>
-            <div>
-                <ul>
-                    <li><img src="/images/Solutions/active.png">Web Applications</img></li>
-                    <li><img src="/images/Solutions/active.png">Web Design</img></li>
-                    <li><img src="/images/Solutions/active.png">Web Development</img></li>
-                    <li><img src="/images/Solutions/active.png">Mobile Application</img></li>
-                    <li><img src="/images/Solutions/active.png">Web Hosting</img></li>
-                    <li><img src="/images/Solutions/active.png">Web Portal</img></li>
-                    <li><img src="/images/Solutions/active.png">E-Commerce</img></li>
-                    <li><img src="/images/Solutions/active.png">Internet Marketing</img></li>
-                    <li><img src="/images/Solutions/active.png">Content Marketing</img></li>
-                    <li><img src="/images/Solutions/active.png">Search Engine Marketing</img></li>
-                </ul>                
-            </div>
-        </section>
-
         <section class="our-team">
             <div style="background-image: url('/images/Solutions/our-team.jpg')"></div>
             <div>
@@ -127,15 +142,17 @@
         </section>
 
         <section class="our-values">
-            <h1>OUR VALUES</h1>
-            <ul>
-                <li><img src="/images/Solutions/active.png">Integrity</img></li>
-                <li><img src="/images/Solutions/active.png">Transparency</img></li>
-                <li><img src="/images/Solutions/active.png">Accountability</img></li>
-                <li><img src="/images/Solutions/active.png">Efficiency</img></li>
-                <li><img src="/images/Solutions/active.png">Innovation</img></li>
-                <li><img src="/images/Solutions/active.png">Multi Returns on Investment</img></li> 
-            </ul>
+            <div>
+                <h1>OUR VALUES</h1>
+                <ul>
+                    <li><img src="/images/Solutions/active.png">Integrity</img></li>
+                    <li><img src="/images/Solutions/active.png">Transparency</img></li>
+                    <li><img src="/images/Solutions/active.png">Accountability</img></li>
+                    <li><img src="/images/Solutions/active.png">Efficiency</img></li>
+                    <li><img src="/images/Solutions/active.png">Innovation</img></li>
+                    <li><img src="/images/Solutions/active.png">Multi Returns on Investment</img></li> 
+                </ul>
+            </div>
         </section>
     </div>
 @endsection

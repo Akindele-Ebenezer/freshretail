@@ -50,6 +50,20 @@ section {
         padding-inline: 1rem;
     }
 
+    &.network-engineering,
+    &.our-solutions,
+    &.smart-home-automation {
+        @include list();
+    } 
+
+    &.smart-home-automation { 
+        div {
+            ul {
+                max-width: 42rem;
+            }
+        }
+    }
+
     &.sec-1 { 
         background-attachment: fixed;
         background-position: center;

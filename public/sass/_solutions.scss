@@ -3,8 +3,7 @@
     .solutions {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        padding-top: 3rem;
+        justify-content: space-evenly; 
         
         .solution-wrapper {
             display: flex;
@@ -54,33 +53,16 @@
                 p {
                     font-size: 1.3rem;
                 }
-            }
-
+            } 
         }
         
-        .more-solutions,
-        .our-values {
-            width: 40rem;
-            
-            h1 {
-                color: lighten($color: $color-1, $amount: 30);
-                font-size: 2rem;
-                text-align: center;
-            }
-            
-            ul {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-
-                li {
-                    margin: .5rem;
-
-                    img {
-                        margin-right: 1rem;
-                        transform: translateY(0.4rem);
-                        width: 1.5rem;
-                    }
+        .services,
+        .our-values,
+        .customer-experience-solutions {
+            @include list();
+            div {
+                ul {
+                    max-width: 51rem;
                 }
             }
         }

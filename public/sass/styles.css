@@ -212,6 +212,38 @@ section:not(section.sec-1, section.sec-2, section.sec-3) {
   margin-block: 4rem;
   padding-inline: 1rem;
 }
+section.network-engineering, section.our-solutions, section.smart-home-automation {
+  display: flex;
+  justify-content: center;
+  padding-inline: 1rem;
+}
+section.network-engineering div h1, section.our-solutions div h1, section.smart-home-automation div h1 {
+  color: #2362cf;
+  font-size: 2rem;
+  text-align: center;
+}
+section.network-engineering div h2, section.our-solutions div h2, section.smart-home-automation div h2 {
+  color: #ff5353;
+  font-size: 1.5rem;
+  text-align: center;
+}
+section.network-engineering div ul, section.our-solutions div ul, section.smart-home-automation div ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 40rem;
+}
+section.network-engineering div ul li, section.our-solutions div ul li, section.smart-home-automation div ul li {
+  margin: 0.5rem;
+}
+section.network-engineering div ul li img, section.our-solutions div ul li img, section.smart-home-automation div ul li img {
+  margin-right: 1rem;
+  transform: translateY(0.4rem);
+  width: 1.5rem;
+}
+section.smart-home-automation div ul {
+  max-width: 42rem;
+}
 section.sec-1 {
   background-attachment: fixed;
   background-position: center;
@@ -591,14 +623,17 @@ main .main .page-title {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  padding-block: 6rem;
   text-align: center;
 }
-main .main .page-title h1 {
+main .main .page-title div {
+  background: rgba(0, 0, 0, 0.3);
+  padding-block: 6rem;
+}
+main .main .page-title div h1 {
   font-size: 4rem;
 }
-main .main .page-title h1,
-main .main .page-title p {
+main .main .page-title div h1,
+main .main .page-title div p {
   color: #fff;
 }
 main .main .page-content {
@@ -682,6 +717,11 @@ main .main .page-content .digital-signage div h1 {
   font-size: 2rem;
   text-align: center;
 }
+main .main .page-content .digital-signage div h2 {
+  color: #ff5353;
+  font-size: 1.5rem;
+  text-align: center;
+}
 main .main .page-content .digital-signage div ul {
   display: flex;
   justify-content: center;
@@ -701,6 +741,10 @@ main .main .page-content .digital-signage div ul li img {
   padding-inline: unset !important;
 }
 
+.page-content #map {
+  height: 50rem;
+  width: 50rem;
+}
 .page-content.Contact {
   background: #13b1cd;
 }
@@ -780,7 +824,6 @@ main .main .page-content .digital-signage div ul li img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 3rem;
 }
 .page-content .solutions .solution-wrapper {
   display: flex;
@@ -824,31 +867,51 @@ main .main .page-content .digital-signage div ul li img {
 .page-content .solutions .sec-1 div p {
   font-size: 1.3rem;
 }
-.page-content .solutions .more-solutions,
-.page-content .solutions .our-values {
-  width: 40rem;
+.page-content .solutions .services,
+.page-content .solutions .our-values,
+.page-content .solutions .customer-experience-solutions {
+  display: flex;
+  justify-content: center;
+  padding-inline: 1rem;
 }
-.page-content .solutions .more-solutions h1,
-.page-content .solutions .our-values h1 {
+.page-content .solutions .services div h1,
+.page-content .solutions .our-values div h1,
+.page-content .solutions .customer-experience-solutions div h1 {
   color: #2362cf;
   font-size: 2rem;
   text-align: center;
 }
-.page-content .solutions .more-solutions ul,
-.page-content .solutions .our-values ul {
+.page-content .solutions .services div h2,
+.page-content .solutions .our-values div h2,
+.page-content .solutions .customer-experience-solutions div h2 {
+  color: #ff5353;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.page-content .solutions .services div ul,
+.page-content .solutions .our-values div ul,
+.page-content .solutions .customer-experience-solutions div ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 40rem;
 }
-.page-content .solutions .more-solutions ul li,
-.page-content .solutions .our-values ul li {
+.page-content .solutions .services div ul li,
+.page-content .solutions .our-values div ul li,
+.page-content .solutions .customer-experience-solutions div ul li {
   margin: 0.5rem;
 }
-.page-content .solutions .more-solutions ul li img,
-.page-content .solutions .our-values ul li img {
+.page-content .solutions .services div ul li img,
+.page-content .solutions .our-values div ul li img,
+.page-content .solutions .customer-experience-solutions div ul li img {
   margin-right: 1rem;
   transform: translateY(0.4rem);
   width: 1.5rem;
+}
+.page-content .solutions .services div ul,
+.page-content .solutions .our-values div ul,
+.page-content .solutions .customer-experience-solutions div ul {
+  max-width: 51rem;
 }
 .page-content .our-team {
   align-items: center;

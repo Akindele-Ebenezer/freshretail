@@ -4,16 +4,20 @@ main {
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
-            padding-block: 6rem;
             text-align: center;
             
-            h1 {
-                font-size: 4rem;
-            }
+            div {
+                background: rgba(0, 0, 0, .3);
+                padding-block: 6rem;
 
-            h1,
-            p {
-                color: #fff;
+                h1 {
+                    font-size: 4rem;
+                }
+    
+                h1,
+                p {
+                    color: #fff;
+                }
             }
         }
 
@@ -111,34 +115,7 @@ main {
             }
 
             .digital-signage {
-                display: flex;
-                justify-content: center;
-                padding-inline: 1rem;
-
-                div {
-                    h1 {
-                        color: #2362cf;
-                        font-size: 2rem;
-                        text-align: center;
-                    }
-    
-                    ul {
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                        max-width: 40rem;
-    
-                        li {
-                            margin: 0.5rem;
-    
-                            img {
-                                margin-right: 1rem;
-                                transform: translateY(0.4rem);
-                                width: 1.5rem;
-                            }
-                        }
-                    }
-                }
+                @include list();
             }
         }
     }

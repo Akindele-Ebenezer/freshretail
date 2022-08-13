@@ -101,6 +101,24 @@
                     </p>
                 </div>
             </section>
+ 
+            <section class="our-solutions">
+                <div>
+                    <h1>CABLING SOLUTIONS</h1>
+                    <h2>Data | Power | Fibre Cabling</h2>
+                    <ul>
+                        <li><img src="/images/Solutions/active.png">CCTv</img></li>
+                        <li><img src="/images/Solutions/active.png">IP Cameras</img></li>
+                        <li><img src="/images/Solutions/active.png">Motion Detectors</img></li>
+                        <li><img src="/images/Solutions/active.png">Access Control</img></li>
+                        <li><img src="/images/Solutions/active.png">Cloud Solutions</img></li>
+                        <li><img src="/images/Solutions/active.png">Lights</img></li> 
+                        <li><img src="/images/Solutions/active.png">Inverter | Solar</img></li> 
+                        <li><img src="/images/Solutions/active.png">Sound Systems</img></li> 
+                        <li><img src="/images/Solutions/active.png">Cooling Systems</img></li> 
+                    </ul>
+                </div>
+            </section>
 
             <section class="sec-2">
                 <div class="sec-2-inner">
@@ -139,6 +157,21 @@
                         </div>
                     </div>
                     <p>Computer collection  <em>4</em></p>
+                </div>
+            </section>
+
+            <section class="network-engineering">
+                <div>
+                    <h1>NETWORKING ENGINEERING</h1> 
+                    <ul>
+                        <li><img src="/images/Solutions/active.png">Network Security</img></li>
+                        <li><img src="/images/Solutions/active.png">IP Cameras</img></li>
+                        <li><img src="/images/Solutions/active.png">Server Hosting</img></li>
+                        <li><img src="/images/Solutions/active.png">Cloud Solutions</img></li>
+                        <li><img src="/images/Solutions/active.png">PABX Installations</img></li>
+                        <li><img src="/images/Solutions/active.png">Network Automation</img></li> 
+                        <li><img src="/images/Solutions/active.png">Laying of Fiber|Network Cables</img></li>                         
+                    </ul>
                 </div>
             </section>
 
@@ -243,6 +276,20 @@
                     </div>
                 </div>
             </div>
+
+            <section class="smart-home-automation">
+                <div>
+                    <h1>Smart Home Automation</h1> 
+                    <ul>
+                        <li><img src="/images/Solutions/active.png">Automated Gates</img></li>
+                        <li><img src="/images/Solutions/active.png">Home Networking</img></li>
+                        <li><img src="/images/Solutions/active.png">Home Cooling Automation</img></li>
+                        <li><img src="/images/Solutions/active.png">Automated Doors</img></li>
+                        <li><img src="/images/Solutions/active.png">Complete Smart Home Automated</img></li>
+                        <li><img src="/images/Solutions/active.png">Complete Smart Business Automated</img></li>                         
+                    </ul>
+                </div>
+            </section>
 
             <section class="sec-3" style="background-image: url('/images/newsletter.jpg')">
                 <div>
@@ -373,7 +420,7 @@
                     Feedback[i].lastElementChild.checked = true;                    
                 } else {
                     Feedback[i].lastElementChild.checked = false;
-                } -
+                }
             });            
         } 
          

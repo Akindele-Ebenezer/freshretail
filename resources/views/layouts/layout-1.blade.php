@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="{{ asset('/sass/styles.css') }}">
 
     <link rel="shortcut icon" href="{{ asset('/images/logo.png') }}" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,10 +45,10 @@
                 <div>
                     <ul>
                         <li><a href="{{ route('Home') }}" class="{{ Request::is('/') ? 'active-page' : '' }}">HOME</a></li>
-                        <li><a href="{{ route('About') }}" class="{{ Request::is('About') ? 'active-page' : '' }}">ABOUT</a></li>
-                        <li><a href="{{ route('Shop') }}" class="{{ Request::is('Shop') ? 'active-page' : '' }}">SHOP</a></li>
-                        <li><a href="{{ route('Contact') }}" class="{{ Request::is('Contact') ? 'active-page' : '' }}">CONTACT</a></li>
                         <li><a href="{{ route('Solutions') }}" class="{{ Request::is('Solutions') ? 'active-page' : '' }}">SOLUTIONS</a></li>
+                        <li><a href="{{ route('About') }}" class="{{ Request::is('About') ? 'active-page' : '' }}">ABOUT</a></li>
+                        <li><a href="{{ route('Contact') }}" class="{{ Request::is('Contact') ? 'active-page' : '' }}">CONTACT</a></li>
+                        <li><a href="{{ route('Shop') }}" class="{{ Request::is('Shop') ? 'active-page' : '' }}">SHOP</a></li>
                     </ul>
                 </div>
                 <div>
