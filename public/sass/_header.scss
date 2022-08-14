@@ -104,6 +104,134 @@ header {
     }
 }
 
+.nav-sm-screen {
+    animation-duration: 1s;
+    animation-name: FadeIn;
+    background: #333;
+    display: none;
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    width: 100vw;
+    z-index: 1100;
+    
+    div {
+        .header {
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+
+            p {
+                background: $color-1; 
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                font-weight: bold;
+                padding-inline: 0.6rem;
+                padding-top: 2px;
+                transform: translateX(-2rem);
+                transition: .5s;             
+                
+                &:hover {
+                    background: unset;
+                    color: $color-3;
+                }
+            }
+        }   
+    }
+
+    .inner {
+        display: flex; 
+        justify-content: right;
+        padding-inline: 1.5rem;
+        
+        .inner-items {
+            padding-block: 3rem;
+            transform: translateX(-2rem);
+            
+            div {
+                ul {
+                    li {
+                        text-align: right; 
+                        
+                        a {
+                            color: #fff;
+                            font-size: 1.5rem;
+                                                
+                            &:hover {
+                                color: $color-2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-footer { 
+        bottom: 0;  
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        transform: translateY(-2rem);
+
+        div {
+            display: flex;
+            flex-basis: 5rem;
+            justify-content: space-evenly;
+
+            &:last-of-type {
+                flex-basis: 8rem;
+            }
+
+            p {
+                color: #fff;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                transform: translateX(-2rem);
+                width: 100%;
+
+                li {
+
+                    svg {
+                        @include svg();
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.toggle {
+    display: block;
+}
+
 @media (max-width: 830px) {
     header {
         .header {
@@ -113,6 +241,12 @@ header {
                 } 
             }
         }
+    }
+}
+
+@media (min-width: 830px) {
+    .nav-sm-screen {
+        display: none;
     }
 }
 
