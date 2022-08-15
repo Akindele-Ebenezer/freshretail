@@ -5,7 +5,7 @@
     }
 
     &.Contact {
-        background: $color-5;
+        background: darken($color: $color-5, $amount: 40);
     }
 
     .contact-section {
@@ -71,7 +71,7 @@
     
                     input,
                     textarea {
-                        background: $color-5;
+                        background: darken($color: $color-5, $amount: 40);
                         border: none;
                         border-bottom: 1px solid #fff;
                         color: #fff;

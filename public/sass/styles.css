@@ -76,7 +76,7 @@ header .header nav div:first-child h2 img {
   width: 7rem;
 }
 header .header nav div:last-child svg {
-  height: 2rem;
+  height: 1.65rem;
   width: 2rem;
 }
 header .header nav div ul {
@@ -859,7 +859,7 @@ main .main .page-content .digital-signage div ul li img {
   width: 50rem;
 }
 .page-content.Contact {
-  background: #13b1cd;
+  background: #021012;
 }
 .page-content .contact-section .contact-title {
   padding-top: 3rem;
@@ -924,7 +924,7 @@ main .main .page-content .digital-signage div ul li img {
 }
 .page-content .contact-section .contact-form form div input,
 .page-content .contact-section .contact-form form div textarea {
-  background: #13b1cd;
+  background: #021012;
   border: none;
   border-bottom: 1px solid #fff;
   color: #fff;
@@ -1059,6 +1059,166 @@ main .main .page-content .digital-signage div ul li img {
 
 .Solutions {
   padding-inline: unset !important;
+}
+
+.login {
+  align-items: center;
+  background: linear-gradient(to right, #719ce7, #ffb9b9);
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+}
+.login .inner {
+  background: #fff;
+  border-radius: 1rem;
+  flex-basis: 25rem;
+  padding: 2rem;
+}
+.login .inner .credentials button {
+  background: linear-gradient(to right, #719ce7, #ffb9b9);
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding-block: 1rem;
+  width: 100%;
+}
+.login .inner .credentials input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9rem;
+  outline: none;
+  padding: 0.4rem 2rem;
+  width: 80%;
+}
+.login .inner .credentials label svg {
+  cursor: pointer;
+  fill: #0d244c;
+  height: 1.2rem;
+  transition: 0.5s;
+  width: 1rem;
+  padding-right: 0.5rem;
+  transform: translate(0.2rem, 4rem);
+}
+.login .inner .credentials label svg:hover {
+  fill: #c8d9f6;
+}
+.login .inner .credentials .forgot-password {
+  text-align: right;
+}
+.login .inner h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.login .inner .sign-up {
+  padding-block: 2rem;
+  text-align: center;
+}
+.login .inner .sign-up a {
+  text-decoration: 2px #ff5353 underline;
+}
+
+.shopping-cart {
+  display: flex;
+  justify-content: center;
+  padding-block: 4rem;
+}
+.shopping-cart table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 90rem;
+}
+.shopping-cart table td {
+  border-bottom: 1px solid #ddd;
+  width: 20%;
+}
+.shopping-cart table td:first-of-type {
+  display: flex;
+  padding: 1rem 0;
+  text-align: left;
+  width: 40rem;
+}
+.shopping-cart table td.total {
+  color: #ff5353;
+}
+.shopping-cart table td img {
+  height: 7rem;
+  margin-right: 1rem;
+  width: 7rem;
+}
+.shopping-cart table td input {
+  margin-inline: 1rem;
+  padding-inline: 0.5rem;
+  outline: none;
+  width: 2rem;
+}
+.shopping-cart table td h1 {
+  font-size: 1.5rem;
+  word-break: break-word;
+}
+.shopping-cart table td h1 span {
+  color: #ff5353;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.shopping-cart table th {
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  width: 20%;
+}
+.shopping-cart table th:first-of-type {
+  text-align: left;
+  width: 40%;
+}
+.shopping-cart table tr:last-of-type {
+  font-weight: bold;
+}
+
+.save {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.save button {
+  background: unset;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  background: #111;
+  border: none;
+  border-radius: unset;
+  margin: 0.4rem;
+  width: 30rem;
+}
+.save button:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: unset;
+}
+.save button:first-of-type {
+  background: unset;
+  border: 2px solid #ddd;
+  color: #111;
+}
+.save button:hover {
+  border: unset;
+  border: 2px solid #ddd;
+}
+
+.shopping-cart-heading {
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+  width: 90vw;
+}
+.shopping-cart-heading h1:first-of-type {
+  font-size: 2rem;
 }
 
 footer {

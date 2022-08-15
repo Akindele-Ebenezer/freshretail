@@ -1,0 +1,62 @@
+.login {
+    align-items: center;
+    background: linear-gradient(to right, #719ce7, #ffb9b9);
+    display: flex;
+    height: 85vh;
+    justify-content: center; 
+
+    .inner {
+        background: #fff;
+        border-radius: 1rem;
+        flex-basis: 25rem;
+        padding: 2rem;
+
+        .credentials {
+            button {
+                background: linear-gradient(to right, #719ce7, #ffb9b9);
+                border: none;
+                border-radius: 1rem;
+                color: #fff;
+                cursor: pointer;
+                margin-top: 2rem;
+                padding-block: 1rem;
+                width: 100%;
+            }
+
+            input { 
+                border: none; 
+                border-bottom: 1px solid #ddd;
+                font-size: .9rem;
+                outline: none;
+                padding: 0.4rem 2rem;
+                width: 80%;
+            }
+
+            label {
+                svg {
+                    @include svg();     
+                    padding-right: 0.5rem;
+                    transform: translate(0.2rem, 4rem); 
+                }
+            }
+
+            .forgot-password {
+                text-align: right;
+            }
+        }
+        
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .sign-up {
+            padding-block: 2rem;
+            text-align: center;            
+
+            a {
+                text-decoration: 2px $color-3 underline;
+            }
+        }
+    }
+}

@@ -37,4 +37,23 @@ class HomeController extends Controller
             'TitleBg' => 'solutions.jpg',
         ]);
     }
+
+    public function login() {
+        return view('Login', [
+            'PageTitle' => 'Login', 
+        ]);
+    }
+
+    public function create_account() {
+        return view('SignUp', [
+            'PageTitle' => 'Create Account', 
+        ]);
+    }
+
+    public function shopping_cart() {
+        return view('ShoppingCart', [
+            'PageTitle' => 'Shopping Cart', 
+            'TitleBg' => 'shopping-cart.jpg',
+        ]);
+    }
 }
