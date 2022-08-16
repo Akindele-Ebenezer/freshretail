@@ -56,4 +56,10 @@ class HomeController extends Controller
             'TitleBg' => 'shopping-cart.jpg',
         ]);
     }
+
+    public function purchase() {
+        return view('Purchase', [
+            'PageTitle' => 'Purchase',  
+        ]);
+    }
 }

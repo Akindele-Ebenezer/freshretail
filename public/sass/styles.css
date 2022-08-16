@@ -53,6 +53,24 @@ header .header nav {
   justify-content: space-between;
   padding-block: 1rem;
 }
+header .header nav div:last-of-type {
+  position: relative;
+}
+header .header nav div:last-of-type .cart-items-total {
+  background: #fff;
+  border-radius: 50%;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  height: 1.5rem;
+  padding: 0.2rem;
+  position: absolute;
+  right: -0.3rem;
+  top: -1.5rem;
+}
+header .header nav div:last-of-type .cart-items-total p {
+  transform: translate(0.193rem, -0.4rem);
+}
 header .header nav div h1 img {
   cursor: pointer;
   width: 3rem;
@@ -1219,6 +1237,27 @@ main .main .page-content .digital-signage div ul li img {
 }
 .shopping-cart-heading h1:first-of-type {
   font-size: 2rem;
+}
+
+.purchase .product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.purchase .product div:first-of-type {
+  background-position: center;
+  background-size: cover;
+  height: 35rem;
+  width: 50rem;
+}
+.purchase .product div:last-of-type {
+  width: 50rem;
+}
+.purchase .product div:last-of-type h1 {
+  font-size: 2rem;
+}
+.purchase .product div:last-of-type h2 {
+  font-size: 1.5rem;
 }
 
 footer {

@@ -16,7 +16,28 @@ header {
             justify-content: space-between;
             padding-block: 1rem;
 
-            div {
+            div { 
+                &:last-of-type {
+                    position: relative;
+    
+                    .cart-items-total {
+                        background: #fff; 
+                        border-radius: 50%;
+                        color: red;
+                        font-weight: bold;
+                        font-style: italic;
+                        height: 1.5rem;
+                        padding: 0.2rem;
+                        position: absolute;
+                        right: -.3rem;
+                        top: -1.5rem; 
+
+                        p {
+                            transform: translate(0.193rem, -0.4rem);
+                        }
+                    }
+                }
+
                 h1 {
                     img { 
                         cursor: pointer;

@@ -1,0 +1,28 @@
+.purchase {
+    .product {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        div {
+            &:first-of-type {
+                background-position: center;
+                background-size: cover;
+                height: 35rem;
+                width: 50rem;
+            }
+
+            &:last-of-type {
+                width: 50rem;
+
+                h1 {
+                    font-size: 2rem;
+                }
+
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

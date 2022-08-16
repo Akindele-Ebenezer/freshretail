@@ -18,3 +18,5 @@ Route::get('/Login', [HomeController::class, 'login'])->name('Login');
 Route::get('/CreateAccount', [HomeController::class, 'create_account'])->name('CreateAccount'); 
 
 Route::get('/ShoppingCart', [HomeController::class, 'shopping_cart'])->name('ShoppingCart'); 
+
+Route::get('/Purchase', [HomeController::class, 'Purchase'])->name('Purchase'); 
