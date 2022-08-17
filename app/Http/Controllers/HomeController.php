@@ -61,5 +61,5 @@ class HomeController extends Controller
         return view('Purchase', [
             'PageTitle' => 'Purchase',  
         ]);
-    }
+    } 
 }

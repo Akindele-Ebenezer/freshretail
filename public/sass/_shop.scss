@@ -1,0 +1,23 @@
+.shop {
+    display: flex;
+    justify-content: center;
+
+    .categories {
+        flex-basis: 20rem;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .shop-products {
+        display: flex;
+        flex-basis: 80rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .product {
+            @include product();
+        }
+    }
+}

@@ -9,6 +9,7 @@
                 background-position: center;
                 background-size: cover;
                 height: 35rem;
+                margin-bottom: 2rem;
                 width: 50rem;
             }
 
@@ -19,8 +20,111 @@
                     font-size: 2rem;
                 }
 
+                h1, 
+                h3 {
+                    border-bottom: 2px solid #ddd;
+                }
+
                 h2 {
-                    font-size: 1.5rem;
+                    align-items: center;
+                    display: flex;
+                    justify-content: start;
+                    flex-wrap: wrap;
+                    padding-block: 2rem;
+                    
+                    button {
+                        margin-inline: .2rem;
+                        width: 12rem;
+
+                        &:first-of-type {
+                            @include button();
+                            background: unset;
+                            border: 2px solid #ddd;
+                            border-radius: unset;
+                            color: #333;
+                            
+                            &:hover {
+                                background: unset;
+                                border: 2px solid #ddd; 
+                            }
+                        }
+                        
+                        
+                        &:last-of-type {
+                            @include button();
+                            background: #111;
+                            border: 2px solid #111;
+                            border-radius: unset;
+                            color: #fff;
+                            
+                            &:hover {
+                                background: unset;
+                                border: 2px solid #111;
+                                color: #333;
+                            }
+                        }
+                    }
+
+                    span {
+                        color: $color-3;
+                        font-size: 1.5rem;              
+                        padding-right: 2rem;              
+                    }
+                }
+
+                h3 {
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .related-products {
+        padding-block: 3rem;
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        } 
+
+        .product {
+            div {
+                height: 15rem;
+            }
+
+            .sale {
+                transform: translate(6.03rem, 2.19rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 557px) {
+    .related-products {
+        .product {
+            .sale {
+                transform: translateX(3.03rem) !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .purchase {
+        .product {
+            div {
+                h2 {
+                    align-items: start !important;
+                    flex-direction: column;
+
+                    button {
+                        width: 98.4% !important;
+
+                        &:first-of-type {
+                            margin-block: 1rem;
+                        }
+                    }
                 }
             }
         }

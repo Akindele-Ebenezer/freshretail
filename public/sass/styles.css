@@ -1248,6 +1248,7 @@ main .main .page-content .digital-signage div ul li img {
   background-position: center;
   background-size: cover;
   height: 35rem;
+  margin-bottom: 2rem;
   width: 50rem;
 }
 .purchase .product div:last-of-type {
@@ -1256,8 +1257,157 @@ main .main .page-content .digital-signage div ul li img {
 .purchase .product div:last-of-type h1 {
   font-size: 2rem;
 }
+.purchase .product div:last-of-type h1,
+.purchase .product div:last-of-type h3 {
+  border-bottom: 2px solid #ddd;
+}
 .purchase .product div:last-of-type h2 {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-block: 2rem;
+}
+.purchase .product div:last-of-type h2 button {
+  margin-inline: 0.2rem;
+  width: 12rem;
+}
+.purchase .product div:last-of-type h2 button:first-of-type {
+  background: unset;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  background: unset;
+  border: 2px solid #ddd;
+  border-radius: unset;
+  color: #333;
+}
+.purchase .product div:last-of-type h2 button:first-of-type:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: unset;
+}
+.purchase .product div:last-of-type h2 button:first-of-type:hover {
+  background: unset;
+  border: 2px solid #ddd;
+}
+.purchase .product div:last-of-type h2 button:last-of-type {
+  background: unset;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  background: #111;
+  border: 2px solid #111;
+  border-radius: unset;
+  color: #fff;
+}
+.purchase .product div:last-of-type h2 button:last-of-type:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: unset;
+}
+.purchase .product div:last-of-type h2 button:last-of-type:hover {
+  background: unset;
+  border: 2px solid #111;
+  color: #333;
+}
+.purchase .product div:last-of-type h2 span {
+  color: #ff5353;
   font-size: 1.5rem;
+  padding-right: 2rem;
+}
+.purchase .product div:last-of-type h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.purchase .related-products {
+  padding-block: 3rem;
+}
+.purchase .related-products h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.purchase .related-products .product div {
+  height: 15rem;
+}
+.purchase .related-products .product .sale {
+  transform: translate(6.03rem, 2.19rem);
+}
+
+@media (max-width: 557px) {
+  .related-products .product .sale {
+    transform: translateX(3.03rem) !important;
+  }
+}
+@media (max-width: 520px) {
+  .purchase .product div h2 {
+    align-items: start !important;
+    flex-direction: column;
+  }
+  .purchase .product div h2 button {
+    width: 98.4% !important;
+  }
+  .purchase .product div h2 button:first-of-type {
+    margin-block: 1rem;
+  }
+}
+.shop {
+  display: flex;
+  justify-content: center;
+}
+.shop .categories {
+  flex-basis: 20rem;
+}
+.shop .categories h2 {
+  font-size: 1.5rem;
+}
+.shop .shop-products {
+  display: flex;
+  flex-basis: 80rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shop .shop-products .product {
+  margin: 0.5rem;
+  width: 16rem;
+}
+.shop .shop-products .product div {
+  align-items: center;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+  width: 15rem;
+}
+.shop .shop-products .product h1 {
+  color: #ff5353;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.shop .shop-products .product p {
+  padding-block: 0.4rem;
+}
+.shop .shop-products .product span {
+  color: #aaa;
+  text-transform: uppercase;
+}
+.shop .shop-products .product .sale {
+  background: #ff5353;
+  border-radius: 0.3rem;
+  color: #fff;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0.2rem 1rem;
+  transform: translate(10.03rem, 2.19rem);
+  width: max-content;
 }
 
 footer {
